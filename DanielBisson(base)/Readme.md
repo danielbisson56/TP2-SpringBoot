@@ -56,7 +56,7 @@ Lors de l'ouverture du projet dans votre IDE, il est possible qu'il y ait 2 choi
 
 Si tout fonctionne bien, votre projet sera importé à votre IDE et aucune erreur ne sera affichée sur vos dossiers. Votre dossier de projet aura également les petites lettres «m» et «j» juste au-dessus de lui, et la hiérarchie du projet devrait être comme suit:
 
-<img src=".\images\image-20191117114342901.png" alt="image-20191117114342901" style="zoom:150%;" />
+<img src="/images/image-20191117114342901.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 L'application web de SpringBoot crée donc la structure initiale pour lancer un projet utilisant le framework de Spring. Dans le dossier «src\main\java\SpringbootMVCRestfulTutorial\%votreNom%» se trouvera le fichier «%votrenom%Application.java».
 
