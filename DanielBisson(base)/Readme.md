@@ -56,15 +56,15 @@ Lors de l'ouverture du projet dans votre IDE, il est possible qu'il y ait 2 choi
 
 Si tout fonctionne bien, votre projet sera importé à votre IDE et aucune erreur ne sera affichée sur vos dossiers. Votre dossier de projet aura également les petites lettres «m» et «j» juste au-dessus de lui, et la hiérarchie du projet devrait être comme suit:
 
-<img src="C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117114342901.png" alt="image-20191117114342901" style="zoom:150%;" />
+<img src=".\images\image-20191117114342901.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 L'application web de SpringBoot crée donc la structure initiale pour lancer un projet utilisant le framework de Spring. Dans le dossier «src\main\java\SpringbootMVCRestfulTutorial\%votreNom%» se trouvera le fichier «%votrenom%Application.java».
 
-![image-20191117114738720](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117114738720.png)
+![image-20191117114738720](.\images\image-20191117114738720.png)
 
 SpringBoot l'a créé automatiquement. Cette classe est la classe de démarrage du projet Spring. À partir de maintenant, nous devrions être capable de lancer le projet à partir de cette classe. Faites-le test pour être certain que tout est fonctionnel avant de commencer à éditer le projet. Vous devriez obtenir le résultat suivant en console:
 
-![image-20191117115017369](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117115017369.png)
+![image-20191117115017369](.\images\image-20191117115017369.png)
 
 En lisant les logs affichés à la console, vous confirmerez que le serveur Tomcat est lancé sur le port 8080(http) et que le projet Spring est fonctionnel.
 
@@ -72,7 +72,7 @@ En lisant les logs affichés à la console, vous confirmerez que le serveur Tomc
 
 Nous créerons maintenant les packages et classes nécessaires pour mettre en place un projet de format MVC. Le schéma suivant montre le projet qui sera créé pour le but de ce tutoriel:
 
-<img src="C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117115643167.png" alt="image-20191117115643167" style="zoom:150%;" />
+<img src=".\images\image-20191117115643167.png" alt="image-20191117115643167" style="zoom:150%;" />
 
 Nous créerons 3 couches de fonctionnalités. Une couche API, qui permettra au client de parler à notre application. Une couche service, qui implémentera les fonctionnalités de traitement des données et des fonctionnalités de l'application et une couche accès des données qui fera les liens nécessaires avec les données.
 
@@ -89,7 +89,7 @@ Nous créerons donc 4 packages au projet:
 
 Créez donc ces packages dans votre projet afin que la structure représente le modèle d'application proposé ci-dessous:
 
-![image-20191117120427552](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117120427552.png)
+![image-20191117120427552](.\images\image-20191117120427552.png)
 
 ## Classes et Interface
 
@@ -101,29 +101,29 @@ Créez maintenant les classes et l'interface suivante(s) afin de représenter la
 - PersonDataAccessImplementation.java(data access implementation)
 - PersonController.java (api)
 
-![image-20191117121250458](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117121250458.png)
+![image-20191117121250458](.\images\image-20191117121250458.png)
 
 Créez maintenant l'implémentation de base des classes selon les images ci-dessous. Je vous rappelle que nous ne faisons pour l'instant que définir la structure du projet, sans utiliser les fonctionnalités de SpringBoot. Nous y viendrons par la suite. Assurez-vous simplement de suivre l'implémentation proposée pour l'instant et d'importer les classes nécessaires au bon fonctionnement du code.
 
 ### Le modèle: Person.java
 
-![image-20191117130349933](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117130349933.png)
+![image-20191117130349933](.\images\image-20191117130349933.png)
 
 ### L'API: PersonController.java
 
-![image-20191117130447017](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117130447017.png)
+![image-20191117130447017](.\images\image-20191117130447017.png)
 
 ### Le service: PersonService.java
 
-![image-20191117131013042](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117131013042.png)
+![](.\images\image-20191117131013042.png)
 
 ### Data Access: l'interface PersonDataAccessInterface.java
 
-![image-20191117131223077](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117131223077.png)
+![image-20191117131223077](.\images\image-20191117131223077.png)
 
 ### Data Access: l'implémentation PersonDataAccessImplementation.java
 
-![image-20191117131502939](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117131502939.png)
+![image-20191117131502939](.\images\image-20191117131502939.png)
 
 # Quelques fonctionnalités de SpringBoot
 
@@ -171,29 +171,29 @@ SpringBoot configure plusieurs fonctionnalités automatiquement.
 
 Nous voudrons que notre couche d'accès de données soit instanciée comme un Bean. Nous voudrons également qu'elle soit utilisée comme un «repository». Nous y ajouterons donc l'annotation @Repository. Assurez-vous d'importer la bibliothèque nécessaire pour chacune des annotations ajoutées tout au long du tutoriel.
 
-![image-20191117132520137](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117132520137.png)
+![image-20191117132520137](.\images\image-20191117132520137.png)
 
 ### Service
 
 Définissons maintenant le service avec SpringBoot en utilisant l'annotation @Service.
 
-![image-20191117132707989](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117132707989.png)
+![image-20191117132707989](.\images\image-20191117132707989.png)
 
 Nous utiliserons dans le constructeur l'auto injection de dépendances. SpringBoot nous permet de le faire avec l'annotation @Autowired comme suit.
 
-![image-20191117132912268](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117132912268.png)
+![image-20191117132912268](.\images\image-20191117132912268.png)
 
 Puisque nous pourrions avoir plusieurs implémentations de l'interface «PersonDataAccessInterface», nous aurons besoin de faire un lien entre l'implémentation voulue de cette interface et son utilisation. Nous le ferons en définissant le paramètre du Repository de l'implémentation et en ajoutant l'annotation @Qualifier("") lorsque nous utilisons une instance de l'interface. Voir les images ci-dessous:
 
-![image-20191117133702756](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117133702756.png)
+![image-20191117133702756](.\images\image-20191117133702756.png)
 
-![image-20191117133837204](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117133837204.png)
+![image-20191117133837204](.\images\image-20191117133837204.png)
 
 ### API
 
 L'auto injection de dépendances devra également se faire pour la couche API. Le même principe devra s'appliquer ici en utilisant l'annotation @Autowired.
 
-![image-20191117133106230](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117133106230.png)
+![image-20191117133106230](.\images\image-20191117133106230.png)
 
 ### RestFul avec SpringBoot
 
@@ -201,15 +201,15 @@ SpringBoot permet d'implémenter les fonctionnalités «backend» très rapideme
 
 Définir notre API PersonController.java avec l'annotation @RestController.
 
-![image-20191117134204579](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117134204579.png)
+![image-20191117134204579](.\images\image-20191117134204579.png)
 
 Définir la méthode «addPerson» de l'API comme une méthode POST au niveau de l'implémentation RestFul. Utilisez l'annotation @PostMapping tel que dans l'exemple ci-dessous.
 
-![image-20191117134408662](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117134408662.png)
+![image-20191117134408662](.\images\image-20191117134408662.png)
 
 Enfin, nous auront besoin de déterminer le chemin de la requête voulu pour notre application. L'annotation @RequestMapping("") nous permettra de définir ce paramètre dans la couche API de notre application tel que l'image ci-dessous le démonntre. Disons pour le but de ce tutoriel que le chemin d'accès voulu sera «api/v1/person».
 
-![image-20191117134906716](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117134906716.png)
+![image-20191117134906716](.\images\image-20191117134906716.png)
 
 Donc, suivant l'implémentation effectuée, une requête sur le port 8080 avec le chemin d'accès «api/v1/person» accèdera à l'API que nous venons de développée. Si cette requête est une requête POST, elle accèdera à la méthode «addPerson» ci-dessus.
 
@@ -227,15 +227,15 @@ Nous utiliserons Postman dans ce tutoriel afin de fournir un paquet JSON sur une
 - Dans la section Body, sélectionner raw puis au lieu de text, prenez JSON;
 - Dans l'onglet «Body» créez le paquet JSON avec l’attribut «name = '' James Bond ''».
 
-![image-20191117140603872](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117140603872.png)
+![image-20191117140603872](.\images\image-20191117140603872.png)
 
-![image-20191117140644826](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117140644826.png)
+![image-20191117140644826](.\images\image-20191117140644826.png)
 
-![image-20191117140729188](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117140729188.png)
+![image-20191117140729188](.\images\image-20191117140729188.png)
 
-![image-20191117140854298](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117140854298.png)
+![image-20191117140854298](.\images\image-20191117140854298.png)
 
-![image-20191117141007649](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117141007649.png)
+![image-20191117141007649](.\images\image-20191117141007649.png)
 
 N'envoyez pas la requête immédiatement. Simplement pour bien comprendre ce qui se passe, nous venons de configurer un client qui communiquera avec notre application Web selon le modèle REST et les requêtes HTTP. Il fera une requête POST qui envoi un paquet JSON au chemin d'accès  «localhost:8080/api/v1/person ».
 
@@ -245,7 +245,7 @@ La réception de cette requête est configurée dans notre application en utilis
 
 Notre méthode «addPerson(Person person)» de la classe «PersonController.java» doit se faire donner un objet «Person». Cependant, notre client lui enverra un paquet JSON avec l'attribut "name" = "James Bond". Nous dirons à notre application, à l'aide de l'annotation @ResquestBody de SpringBoot, que nous voulons que le corps de la requête POST (paquet JSON) soit entré dans le paramètre «Person» de la méthode «addPerson». Le tout se programme comme suit.
 
-![image-20191117142004048](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117142004048.png)
+![image-20191117142004048](.\images\image-20191117142004048.png)
 
 ### Effectuer la première requête à votre application
 
@@ -253,15 +253,15 @@ Lancer tout d'abord votre application java. Assurez-vous que Spring est marche e
 
 Lancez maintenant la requête déjà défini à l'aide du bouton «Send» de Postman.
 
-![image-20191117142354756](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117142354756.png)
+![image-20191117142354756](.\images\image-20191117142354756.png)
 
 Assurez-vous de recevoir le code «Status: 200 OK» de la part de Postman.
 
-![image-20191117142459321](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117142459321.png)
+![image-20191117142459321](.\images\image-20191117142459321.png)
 
 Dans la console java, des logs devraient avoir défilés si la requête a fonctionnée.
 
-![image-20191117142601476](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117142601476.png)
+![image-20191117142601476](.\images\image-20191117142601476.png)
 
 Voilà! Votre 1ère requête a fonctionnée!
 
@@ -275,23 +275,23 @@ Notre requête POST a maintenant fonctionné, mais nous ne disposons d'aucun pou
 
 Ajoutons  la méthode «selectAllPeople» à notre interface.
 
-![image-20191117143728180](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117143728180.png)
+![image-20191117143728180](.\images\image-20191117143728180.png)
 
 Implémentons maintenant la méthode à travers toutes les couches de l'application.
 
 #### PersonController.java
 
-![image-20191117143949941](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117143949941.png)
+![image-20191117143949941](.\images\image-20191117143949941.png)
 
 L'annotation @GetMapping définit la méthode «getAllPeople()» comme la méthode à utiliser lors d'une requête GET sans paramètre.
 
 #### PersonService.java
 
-![image-20191117144143906](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117144143906.png)
+![image-20191117144143906](.\images\image-20191117144143906.png)
 
 #### PersonDataAccessImplementation.java
 
-![image-20191117144302255](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117144302255.png)
+![image-20191117144302255](.\images\image-20191117144302255.png)
 
 # Postman: Requête «GET»
 
@@ -301,19 +301,19 @@ Effectuer maintenant une requête GET avec le logiciel POSTMAN afin de voir le c
 
 Créez maintenant une nouvelle requête en utilisant le l'onglet +. Placez le même url que pour la requête POST vu précédemment. Appuyez sur le bouton SEND. Assurez-vous de recevoir le code «200 ok». Vous devriez avoir ceci dans le logiciel POSTMAN.
 
-![image-20191117144956950](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117144956950.png)
+![image-20191117144956950](.\images\image-20191117144956950.png)
 
 Votre requête a fonctionné, mais aucune entrée n'existe présentement dans la liste de la classe «PersonDataAccessImplementation.java». À l'aide de la méthode POST vu précédemment, entrez un à un quelques noms dans votre application. J'entrerai les noms de Ben Clark, Leonardo DiCaprio, Jean Lebrun et Jeanne Lablanche.
 
 Après avoir effectué ces 4 requêtes POST, effectuez maintenant une requête GET, toujours à l'url  «localhost:8080/api/v1/person ». Vous devriez obtenir le résultat suivant dans POSTMAN.
 
-![image-20191117145500089](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117145500089.png)
+![image-20191117145500089](.\images\image-20191117145500089.png)
 
 Notez que notre implémentation de la méthode POST crée un UUID automatiquement (auto-généré). On voit donc ici, pour chacune des personnes présente dans notre liste, un id et un nom, respectant le modèle définit dans la classe «Person.java» du package model.
 
 Si vous utilisez le navigateur web de votre choix, vous devriez être en mesure d'obtenir un résultat identique, mais présenté de façon différente. Voici un essai en utilisant le navigateur Chrome de Google.
 
-![image-20191117145825019](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117145825019.png)
+![image-20191117145825019](.\images\image-20191117145825019.png)
 
 Notre client, que ce soit POSTMAN ou un navigateur web, fait donc l'interaction avec la couche API de notre application. Celle-ci communique avec le service, qui communique avec la couche accès de données afin de retourner à travers la couche service à l'API les informations demandés, le tout respectant le modèle MVC présenté en début de tutoriel.
 
@@ -323,19 +323,19 @@ Ajoutons les méthodes suivantes à notre interface: «deletePersonById» et «u
 
 ### PersonDataAccessInterface.java
 
-![image-20191117150726509](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117150726509.png)
+![image-20191117150726509](.\images\image-20191117150726509.png)
 
 ### PersonDataAccessImplementation.java
 
-![image-20191117150927778](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117150927778.png)
+![image-20191117150927778](.\images\image-20191117150927778.png)
 
 ### PersonService.java
 
-![image-20191117151145970](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117151145970.png)
+![image-20191117151145970](.\images\image-20191117151145970.png)
 
 ### PersonController.java
 
-![image-20191117151559090](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117151559090.png)
+![image-20191117151559090](.\images\image-20191117151559090.png)
 
 Nous ajoutons ici 3 méthodes. Voyons comment SpringBoot nous simplifie la vie dans l'implémentation de nos méthodes HTTP.
 
@@ -351,31 +351,31 @@ Arrêtez tout processus Spring démarrés précédemment. Redémarrez un nouveau
 
 Faites maintenant une requête GET afin de ressortir les informations enregistrés dans votre application. Voici mes résultats.
 
-![image-20191117152719928](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117152719928.png)
+![image-20191117152719928](.\images\image-20191117152719928.png)
 
 Nous allons maintenant créer une requête DELETE avec l'id de la personne que nous voulons supprimer. Je choisirai Ben Clark. Nous devrons placer l'id dans l'url de la requête après le champ «person». Voici donc ma requête.
 
-![image-20191117152959895](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117152959895.png)
+![image-20191117152959895](.\images\image-20191117152959895.png)
 
 Appuyez sur le bouton SEND et assurez-vous de recevoir le code «200 ok».
 
 Effectuez maintenant une nouvelle requête GET afin de voir si la personne a été supprimé.
 
-![image-20191117153125031](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117153125031.png)
+![image-20191117153125031](.\images\image-20191117153125031.png)
 
 Le tout a fonctionné. Faisons maintenant l'update du nom «Jeanne Lablanche» pour le nom «Jeanne Labrune». Nous ferons donc une requête PUT en fournissant un paquet JSON qui contiendra un champ «name» différent de l'original. Nous devrons fournir dans l'url de la requête l'id de la personne ciblée. Voici donc ma requête.
 
-![image-20191117153509155](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117153509155.png)
+![image-20191117153509155](.\images\image-20191117153509155.png)
 
 Appuyez sur le bouton SEND et assurez-vous de recevoir le code «200 ok».
 
 Voyons maintenant si Jeanne qui était blanche est devenue brune avec une notre requête PUT. Faisons à nouveau une requête GET pour voir le contenu de notre base de données.
 
-![image-20191117153622619](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117153622619.png)
+![image-20191117153622619](.\images\image-20191117153622619.png)
 
 Pour terminer, tentons de faire une requête GET en fournissant l'id de la personne voulue. Je vais tenter de faire ressortir seulement Leonardo DiCaprio à l'aide de son id dans une requête GET à partir du navigateur Chrome, comme suit.
 
-![image-20191117153804355](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117153804355.png)
+![image-20191117153804355](.\images\image-20191117153804355.png)
 
 Le tout fonctionne à merveille et complète l'implémentation complète de notre API RestFul en utilisant Spring et les fonctionnalités de SpringBoot.
 
@@ -385,11 +385,11 @@ Nous pouvons également, à l'aide de SpringBoot, s'assurer que certains champs 
 
 ### Person.java
 
-![image-20191117154503523](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117154503523.png)
+![image-20191117154503523](.\images\image-20191117154503523.png)
 
 ### PersonController.java
 
-![image-20191117154612025](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117154612025.png)
+![image-20191117154612025](.\images\image-20191117154612025.png)
 
 Remarquez ici les méthodes «addPerson» et «updatePersonById».
 
@@ -399,7 +399,7 @@ Arrêtez tout processus Spring démarrés précédemment. Redémarrez un nouveau
 
 Effectuez maintenant un test avec une requête POST qui contiendrait paquet JSON qui comporte un élément comme suit: «"name": ""». Vous devriez alors obtenir le message d'erreur suivant dans le logiciel POSTMAN.
 
-![image-20191117155115055](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117155115055.png)
+![image-20191117155115055](.\images\image-20191117155115055.png)
 
 On vous mentionne entre autre un code d'erreur 400 et : "default message": "ne peut pas être vide". On voit donc qu'il a eu une validation pour s'assurer que le champ nom contient des données lors de l'insertion sur une requête POST.
 
@@ -409,13 +409,13 @@ Nous avons discutés précédemment qu'il serait possible d'avoir plusieurs impl
 
 Notre nouvelle implémentation sera elle aussi définit comme un @Repository, mais nous lui fourniront le paramètre "nouvelleImplementation" au lieu de "implementationVoulu". Nous implémenterons simplement la méthode «selectAllPeople» pour le but de la démonstration. Voici donc la définition de la nouvelle implémentation.
 
-![image-20191117160124693](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117160124693.png)
+![image-20191117160124693](.\images\image-20191117160124693.png)
 
 La méthode «selectAllPeople» crée donc une seule personne et lui donne le nom «Ceci est ma nouvelle implémentation et ça fonctionne!». En faisant une requête GET sur cette implémentation, nous devrions donc recevoir une personne avec le nom comme nous l'avons définit dans cet interface.
 
 Pour dire à Spring de faire l'injection de dépendances et modifier notre application, nous avons simplement à aller dans notre classe «PersonService.java» et à modifier l'annotation @Qualifier avec le nom de notre repository comme suit.
 
-![image-20191117160458276](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117160458276.png)
+![image-20191117160458276](.\images\image-20191117160458276.png)
 
 ### Test
 
@@ -423,9 +423,9 @@ Sauvegardez toute modification à votre code d'application java. Arrêtez tout p
 
 Faites maintenant une requête GET avec POSTMAN à l'url «localhost:8080/api/v1/person ». Essayez également à partir de votre navigateur web. Vous serez en mesure de confirmer que votre nouvelle interface est maintenant utilisée lors d'une requête GET sans paramètre en entrée. Voici mes résultats avec POSTMAN et navigateur Chrome.
 
-![image-20191117160815719](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117160815719.png)
+![image-20191117160815719](.\images\image-20191117160815719.png)
 
-![image-20191117160837336](C:\Users\DanielBisson\AppData\Roaming\Typora\typora-user-images\image-20191117160837336.png)
+![image-20191117160837336](.\images\image-20191117160837336.png)
 
 # Pour aller un peu plus loin (tutoriel avancé)
 
