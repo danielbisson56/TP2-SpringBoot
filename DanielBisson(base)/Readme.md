@@ -1,3 +1,22 @@
+# Table des Matières
+
+1. Introduction
+2. Dépendances
+3. Construction initiale du projet
+4. Intégration à votre IDE
+5. Création d'un squelette de projet au format Modèle-Vue-Contrôleur
+6. Quelques fonctionnalités de Springboot
+7. Implémentation de l'API Restful du modèle MVC
+8. POSTMAN
+9. Récupération du contenu de la base de données fictive
+10. POSTMAN - Requête «GET»
+11. Implémentation Restful des méthodes HTTP
+12. Vérification avec POSTMAN
+13. Implémentation de certaines validations
+14. Injection de dépendances avec Springboot
+15. Pour aller un peu plus loin (tutoriel avancé)
+16. Dépannage(Troubleshooting)
+
 # Introduction
 
 Ce tutoriel vous présentera la marche à suivre pour l'utilisation de Springboot afin de construire une application Web, suivant le modèle MVC et les principes de requêtes REST. Cette application utilisera un serveur Tomcat. Pour la simulation d'un client web, le logiciel POSTMAN sera utilisé afin de faire des requêtes à votre application. 
@@ -5,6 +24,8 @@ Ce tutoriel vous présentera la marche à suivre pour l'utilisation de Springboo
 Dans ce tutoriel, vous implémenterez le code «backend» pour les méthodes REST HTTP GET, POST, PUT et DELETE.
 
 Pour terminer, un tutoriel avancé vous présentera une marche à suivre pour joindre une base de données PostgreSQL en utilisant flyway, le logiciel Docker et SpringBootJDBC.
+
+Le tutoriel de base vous prendra environ une heure et demi à compléter. Le tutoriel avancé demandera un 45 minutes additionnel. Je vous souhaite un bon apprentissage!
 
 # Dépendances
 
