@@ -60,11 +60,11 @@ Si tout fonctionne bien, votre projet sera importé à votre IDE et aucune erreu
 
 L'application web de SpringBoot crée donc la structure initiale pour lancer un projet utilisant le framework de Spring. Dans le dossier «src\main\java\SpringbootMVCRestfulTutorial\%votreNom%» se trouvera le fichier «%votrenom%Application.java».
 
-![image-20191117114738720](images\image-20191117114738720.png)
+<img src="images\image-20191117114738720.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 SpringBoot l'a créé automatiquement. Cette classe est la classe de démarrage du projet Spring. À partir de maintenant, nous devrions être capable de lancer le projet à partir de cette classe. Faites-le test pour être certain que tout est fonctionnel avant de commencer à éditer le projet. Vous devriez obtenir le résultat suivant en console:
 
-![image-20191117115017369](images\image-20191117115017369.png)
+<img src="images\image-20191117115017369.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 En lisant les logs affichés à la console, vous confirmerez que le serveur Tomcat est lancé sur le port 8080(http) et que le projet Spring est fonctionnel.
 
@@ -89,7 +89,7 @@ Nous créerons donc 4 packages au projet:
 
 Créez donc ces packages dans votre projet afin que la structure représente le modèle d'application proposé ci-dessous:
 
-![image-20191117120427552](images\image-20191117120427552.png)
+<img src="images\image-20191117120427552.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ## Classes et Interface
 
@@ -101,29 +101,29 @@ Créez maintenant les classes et l'interface suivante(s) afin de représenter la
 - PersonDataAccessImplementation.java(data access implementation)
 - PersonController.java (api)
 
-![image-20191117121250458](images\image-20191117121250458.png)
+<img src="images\image-20191117121250458.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Créez maintenant l'implémentation de base des classes selon les images ci-dessous. Je vous rappelle que nous ne faisons pour l'instant que définir la structure du projet, sans utiliser les fonctionnalités de SpringBoot. Nous y viendrons par la suite. Assurez-vous simplement de suivre l'implémentation proposée pour l'instant et d'importer les classes nécessaires au bon fonctionnement du code.
 
 ### Le modèle: Person.java
 
-![image-20191117130349933](images\image-20191117130349933.png)
+<img src="images\image-20191117130349933.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### L'API: PersonController.java
 
-![image-20191117130447017](images\image-20191117130447017.png)
+<img src="images\image-20191117130447017.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### Le service: PersonService.java
 
-![](images\image-20191117131013042.png)
+<img src="images\image-20191117131013042.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### Data Access: l'interface PersonDataAccessInterface.java
 
-![image-20191117131223077](images\image-20191117131223077.png)
+<img src="images\image-20191117131223077.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### Data Access: l'implémentation PersonDataAccessImplementation.java
 
-![image-20191117131502939](images\image-20191117131502939.png)
+<img src="images\image-20191117131502939.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 # Quelques fonctionnalités de SpringBoot
 
@@ -171,45 +171,45 @@ SpringBoot configure plusieurs fonctionnalités automatiquement.
 
 Nous voudrons que notre couche d'accès de données soit instanciée comme un Bean. Nous voudrons également qu'elle soit utilisée comme un «repository». Nous y ajouterons donc l'annotation @Repository. Assurez-vous d'importer la bibliothèque nécessaire pour chacune des annotations ajoutées tout au long du tutoriel.
 
-![image-20191117132520137](images\image-20191117132520137.png)
+<img src="images\image-20191117132520137.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### Service
 
 Définissons maintenant le service avec SpringBoot en utilisant l'annotation @Service.
 
-![image-20191117132707989](images\image-20191117132707989.png)
+<img src="images\image-20191117132707989.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Nous utiliserons dans le constructeur l'auto injection de dépendances. SpringBoot nous permet de le faire avec l'annotation @Autowired comme suit.
 
-![image-20191117132912268](images\image-20191117132912268.png)
+<img src="images\image-20191117132912268.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Puisque nous pourrions avoir plusieurs implémentations de l'interface «PersonDataAccessInterface», nous aurons besoin de faire un lien entre l'implémentation voulue de cette interface et son utilisation. Nous le ferons en définissant le paramètre du Repository de l'implémentation et en ajoutant l'annotation @Qualifier("") lorsque nous utilisons une instance de l'interface. Voir les images ci-dessous:
 
-![image-20191117133702756](images\image-20191117133702756.png)
+<img src="images\image-20191117133702756.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-![image-20191117133837204](images\image-20191117133837204.png)
+<img src="images\image-20191117133837204.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### API
 
 L'auto injection de dépendances devra également se faire pour la couche API. Le même principe devra s'appliquer ici en utilisant l'annotation @Autowired.
 
-![image-20191117133106230](images\image-20191117133106230.png)
+<img src="images\image-20191117133106230.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-### RestFul avec SpringBoot
+### Application RestFul avec SpringBoot
 
 SpringBoot permet d'implémenter les fonctionnalités «backend» très rapidement. Voici la marche à suivre pour débuter l'implémentation REST en utilisant SpringBoot.
 
 Définir notre API PersonController.java avec l'annotation @RestController.
 
-![image-20191117134204579](images\image-20191117134204579.png)
+<img src="images\image-20191117134204579.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Définir la méthode «addPerson» de l'API comme une méthode POST au niveau de l'implémentation RestFul. Utilisez l'annotation @PostMapping tel que dans l'exemple ci-dessous.
 
-![image-20191117134408662](images\image-20191117134408662.png)
+<img src="images\image-20191117134408662.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Enfin, nous auront besoin de déterminer le chemin de la requête voulu pour notre application. L'annotation @RequestMapping("") nous permettra de définir ce paramètre dans la couche API de notre application tel que l'image ci-dessous le démonntre. Disons pour le but de ce tutoriel que le chemin d'accès voulu sera «api/v1/person».
 
-![image-20191117134906716](images\image-20191117134906716.png)
+<img src="images\image-20191117134906716.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Donc, suivant l'implémentation effectuée, une requête sur le port 8080 avec le chemin d'accès «api/v1/person» accèdera à l'API que nous venons de développée. Si cette requête est une requête POST, elle accèdera à la méthode «addPerson» ci-dessus.
 
@@ -226,16 +226,15 @@ Nous utiliserons Postman dans ce tutoriel afin de fournir un paquet JSON sur une
 - Entrer le chemin d'accès : localhost:8080/api/v1/person;
 - Dans la section Body, sélectionner raw puis au lieu de text, prenez JSON;
 - Dans l'onglet «Body» créez le paquet JSON avec l’attribut «name = '' James Bond ''».
+- <img src="images\image-20191117140603872.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-![image-20191117140603872](images\image-20191117140603872.png)
+<img src="images\image-20191117140644826.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-![image-20191117140644826](images\image-20191117140644826.png)
+<img src="images\image-20191117140729188.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-![image-20191117140729188](images\image-20191117140729188.png)
+<img src="images\image-20191117140854298.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-![image-20191117140854298](images\image-20191117140854298.png)
-
-![image-20191117141007649](images\image-20191117141007649.png)
+<img src="images\image-20191117141007649.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 N'envoyez pas la requête immédiatement. Simplement pour bien comprendre ce qui se passe, nous venons de configurer un client qui communiquera avec notre application Web selon le modèle REST et les requêtes HTTP. Il fera une requête POST qui envoi un paquet JSON au chemin d'accès  «localhost:8080/api/v1/person ».
 
@@ -245,7 +244,7 @@ La réception de cette requête est configurée dans notre application en utilis
 
 Notre méthode «addPerson(Person person)» de la classe «PersonController.java» doit se faire donner un objet «Person». Cependant, notre client lui enverra un paquet JSON avec l'attribut "name" = "James Bond". Nous dirons à notre application, à l'aide de l'annotation @ResquestBody de SpringBoot, que nous voulons que le corps de la requête POST (paquet JSON) soit entré dans le paramètre «Person» de la méthode «addPerson». Le tout se programme comme suit.
 
-![image-20191117142004048](images\image-20191117142004048.png)
+<img src="images\image-20191117142004048.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### Effectuer la première requête à votre application
 
@@ -253,15 +252,15 @@ Lancer tout d'abord votre application java. Assurez-vous que Spring est marche e
 
 Lancez maintenant la requête déjà défini à l'aide du bouton «Send» de Postman.
 
-![image-20191117142354756](images\image-20191117142354756.png)
+<img src="images\image-20191117142354756.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Assurez-vous de recevoir le code «Status: 200 OK» de la part de Postman.
 
-![image-20191117142459321](images\image-20191117142459321.png)
+<img src="images\image-20191117142459321.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Dans la console java, des logs devraient avoir défilés si la requête a fonctionnée.
 
-![image-20191117142601476](images\image-20191117142601476.png)
+<img src="images\image-20191117142601476.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Voilà! Votre 1ère requête a fonctionnée!
 
@@ -275,23 +274,23 @@ Notre requête POST a maintenant fonctionné, mais nous ne disposons d'aucun pou
 
 Ajoutons  la méthode «selectAllPeople» à notre interface.
 
-![image-20191117143728180](images\image-20191117143728180.png)
+<img src="images\image-20191117143728180.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Implémentons maintenant la méthode à travers toutes les couches de l'application.
 
 #### PersonController.java
 
-![image-20191117143949941](images\image-20191117143949941.png)
+<img src="images\image-20191117143949941.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 L'annotation @GetMapping définit la méthode «getAllPeople()» comme la méthode à utiliser lors d'une requête GET sans paramètre.
 
 #### PersonService.java
 
-![image-20191117144143906](images\image-20191117144143906.png)
+<img src="images\image-20191117144143906.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 #### PersonDataAccessImplementation.java
 
-![image-20191117144302255](images\image-20191117144302255.png)
+<img src="images\image-20191117144302255.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 # Postman: Requête «GET»
 
@@ -301,41 +300,41 @@ Effectuer maintenant une requête GET avec le logiciel POSTMAN afin de voir le c
 
 Créez maintenant une nouvelle requête en utilisant le l'onglet +. Placez le même url que pour la requête POST vu précédemment. Appuyez sur le bouton SEND. Assurez-vous de recevoir le code «200 ok». Vous devriez avoir ceci dans le logiciel POSTMAN.
 
-![image-20191117144956950](images\image-20191117144956950.png)
+<img src="images\image-20191117144956950.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Votre requête a fonctionné, mais aucune entrée n'existe présentement dans la liste de la classe «PersonDataAccessImplementation.java». À l'aide de la méthode POST vu précédemment, entrez un à un quelques noms dans votre application. J'entrerai les noms de Ben Clark, Leonardo DiCaprio, Jean Lebrun et Jeanne Lablanche.
 
 Après avoir effectué ces 4 requêtes POST, effectuez maintenant une requête GET, toujours à l'url  «localhost:8080/api/v1/person ». Vous devriez obtenir le résultat suivant dans POSTMAN.
 
-![image-20191117145500089](images\image-20191117145500089.png)
+<img src="images\image-20191117145500089.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Notez que notre implémentation de la méthode POST crée un UUID automatiquement (auto-généré). On voit donc ici, pour chacune des personnes présente dans notre liste, un id et un nom, respectant le modèle définit dans la classe «Person.java» du package model.
 
 Si vous utilisez le navigateur web de votre choix, vous devriez être en mesure d'obtenir un résultat identique, mais présenté de façon différente. Voici un essai en utilisant le navigateur Chrome de Google.
 
-![image-20191117145825019](images\image-20191117145825019.png)
+<img src="images\image-20191117145825019.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Notre client, que ce soit POSTMAN ou un navigateur web, fait donc l'interaction avec la couche API de notre application. Celle-ci communique avec le service, qui communique avec la couche accès de données afin de retourner à travers la couche service à l'API les informations demandés, le tout respectant le modèle MVC présenté en début de tutoriel.
 
-# Implémentation complète RestFul des méthodes HTTP
+# Implémentation RestFul des méthodes HTTP
 
 Ajoutons les méthodes suivantes à notre interface: «deletePersonById» et «updatePersonById» et «selectPersonById».
 
 ### PersonDataAccessInterface.java
 
-![image-20191117150726509](images\image-20191117150726509.png)
+<img src="images\image-20191117150726509.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### PersonDataAccessImplementation.java
 
-![image-20191117150927778](images\image-20191117150927778.png)
+<img src="images\image-20191117150927778.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### PersonService.java
 
-![image-20191117151145970](images\image-20191117151145970.png)
+<img src="images\image-20191117151145970.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### PersonController.java
 
-![image-20191117151559090](images\image-20191117151559090.png)
+<img src="images\image-20191117151559090.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Nous ajoutons ici 3 méthodes. Voyons comment SpringBoot nous simplifie la vie dans l'implémentation de nos méthodes HTTP.
 
@@ -351,31 +350,31 @@ Arrêtez tout processus Spring démarrés précédemment. Redémarrez un nouveau
 
 Faites maintenant une requête GET afin de ressortir les informations enregistrés dans votre application. Voici mes résultats.
 
-![image-20191117152719928](images\image-20191117152719928.png)
+<img src="images\image-20191117152719928.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Nous allons maintenant créer une requête DELETE avec l'id de la personne que nous voulons supprimer. Je choisirai Ben Clark. Nous devrons placer l'id dans l'url de la requête après le champ «person». Voici donc ma requête.
 
-![image-20191117152959895](images\image-20191117152959895.png)
+<img src="images\image-20191117152959895.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Appuyez sur le bouton SEND et assurez-vous de recevoir le code «200 ok».
 
 Effectuez maintenant une nouvelle requête GET afin de voir si la personne a été supprimé.
 
-![image-20191117153125031](images\image-20191117153125031.png)
+<img src="images\image-20191117153125031.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Le tout a fonctionné. Faisons maintenant l'update du nom «Jeanne Lablanche» pour le nom «Jeanne Labrune». Nous ferons donc une requête PUT en fournissant un paquet JSON qui contiendra un champ «name» différent de l'original. Nous devrons fournir dans l'url de la requête l'id de la personne ciblée. Voici donc ma requête.
 
-![image-20191117153509155](images\image-20191117153509155.png)
+<img src="images\image-20191117153509155.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Appuyez sur le bouton SEND et assurez-vous de recevoir le code «200 ok».
 
 Voyons maintenant si Jeanne qui était blanche est devenue brune avec une notre requête PUT. Faisons à nouveau une requête GET pour voir le contenu de notre base de données.
 
-![image-20191117153622619](images\image-20191117153622619.png)
+<img src="images\image-20191117153622619.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Pour terminer, tentons de faire une requête GET en fournissant l'id de la personne voulue. Je vais tenter de faire ressortir seulement Leonardo DiCaprio à l'aide de son id dans une requête GET à partir du navigateur Chrome, comme suit.
 
-![image-20191117153804355](images\image-20191117153804355.png)
+<img src="images\image-20191117153804355.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Le tout fonctionne à merveille et complète l'implémentation complète de notre API RestFul en utilisant Spring et les fonctionnalités de SpringBoot.
 
@@ -385,11 +384,11 @@ Nous pouvons également, à l'aide de SpringBoot, s'assurer que certains champs 
 
 ### Person.java
 
-![image-20191117154503523](images\image-20191117154503523.png)
+<img src="images\image-20191117154503523.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### PersonController.java
 
-![image-20191117154612025](images\image-20191117154612025.png)
+<img src="images\image-20191117154612025.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Remarquez ici les méthodes «addPerson» et «updatePersonById».
 
@@ -399,7 +398,7 @@ Arrêtez tout processus Spring démarrés précédemment. Redémarrez un nouveau
 
 Effectuez maintenant un test avec une requête POST qui contiendrait paquet JSON qui comporte un élément comme suit: «"name": ""». Vous devriez alors obtenir le message d'erreur suivant dans le logiciel POSTMAN.
 
-![image-20191117155115055](images\image-20191117155115055.png)
+<img src="images\image-20191117155115055.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 On vous mentionne entre autre un code d'erreur 400 et : "default message": "ne peut pas être vide". On voit donc qu'il a eu une validation pour s'assurer que le champ nom contient des données lors de l'insertion sur une requête POST.
 
@@ -409,13 +408,13 @@ Nous avons discutés précédemment qu'il serait possible d'avoir plusieurs impl
 
 Notre nouvelle implémentation sera elle aussi définit comme un @Repository, mais nous lui fourniront le paramètre "nouvelleImplementation" au lieu de "implementationVoulu". Nous implémenterons simplement la méthode «selectAllPeople» pour le but de la démonstration. Voici donc la définition de la nouvelle implémentation.
 
-![image-20191117160124693](images\image-20191117160124693.png)
+<img src="images\image-20191117160124693.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 La méthode «selectAllPeople» crée donc une seule personne et lui donne le nom «Ceci est ma nouvelle implémentation et ça fonctionne!». En faisant une requête GET sur cette implémentation, nous devrions donc recevoir une personne avec le nom comme nous l'avons définit dans cet interface.
 
 Pour dire à Spring de faire l'injection de dépendances et modifier notre application, nous avons simplement à aller dans notre classe «PersonService.java» et à modifier l'annotation @Qualifier avec le nom de notre repository comme suit.
 
-![image-20191117160458276](images\image-20191117160458276.png)
+<img src="images\image-20191117160458276.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 ### Test
 
@@ -423,9 +422,9 @@ Sauvegardez toute modification à votre code d'application java. Arrêtez tout p
 
 Faites maintenant une requête GET avec POSTMAN à l'url «localhost:8080/api/v1/person ». Essayez également à partir de votre navigateur web. Vous serez en mesure de confirmer que votre nouvelle interface est maintenant utilisée lors d'une requête GET sans paramètre en entrée. Voici mes résultats avec POSTMAN et navigateur Chrome.
 
-![image-20191117160815719](images\image-20191117160815719.png)
+<img src="images\image-20191117160815719.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-![image-20191117160837336](images\image-20191117160837336.png)
+<img src="images\image-20191117160837336.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 # Pour aller un peu plus loin (tutoriel avancé)
 
