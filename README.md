@@ -1,5 +1,11 @@
 <img src="./Image/SpringBoot/spring-boot.png" style="float: left;"  height="70%" width="70%">
 
+------
+
+[TOC]
+
+------
+
 ## **<u>Description :</u>**
 
 C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source et en Java. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants.  Spring boot a été fondé par Pivotal Team 
@@ -119,9 +125,9 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 ## <u>Exemple d'utilisation :</u>
 
 - <u><a href="/Thymeleaf/README.md">Thymeleaf</a></u>
-- <u><a href="/Thymeleaf/README.md">Api Rest</a></u>
-- <u><a href="/Thymeleaf/README.md">JDBC avec PostgreSQL</a></u>
-- <u><a href="/Thymeleaf/README.md">JDBC avec MySQL</a></u>
+- <u><a href="/RestApi/README.md">Api Rest</a></u>
+- <u><a href="/JDBC/PostgreSQL/README.md">JDBC avec PostgreSQL</a></u>
+- <u><a href="/JDBC/MySQL/README.md">JDBC avec MySQL</a></u>
 
 ------
 
