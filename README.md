@@ -1,4 +1,4 @@
-<img style="float: left;" src="./Image/SpringBoot/spring-boot.png">
+<img src="./Image/SpringBoot/spring-boot.png" style="float: left;"  height="70%" width="70%">
 
 ## **<u>Description :</u>**
 
