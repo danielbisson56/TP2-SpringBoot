@@ -2,7 +2,7 @@
 
 ## **<u>Description :</u>**
 
-C
+
 
 ### **<u>Pourquoi Choisir Spring boot :</u>**
 
@@ -12,7 +12,7 @@ C
 
 - Il a été développé selon le principe <u>R</u>apid <u>A</u>pplication <u>D</u>éveloppement. RAD permet d'être flexible aux changements et est destiné au projet devant être livré tôt (2-3 mois) . Il permet de découper un gros projet en petits et il focus sur la réutilisation de Template, d'outils, de processus et de code.
 
-<img src="./Image/RAD/RAD-Model.png" style = "float: left;"  height="50%" width="50%"  >
+<img src="./Image/RAD/RAD-Model.png" style = "float: middle;"  height="50%" width="50%"  >
 
 - Il intègre les serveurs web Tomcat, Jetty et Undertow
 
@@ -31,8 +31,6 @@ C
 
 
 - Il nécessite aucune configuration d'Xml comme Spring.
-
-
 
 ## <u>Évolution de Spring et Spring boot :</u>
 
