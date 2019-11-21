@@ -20,11 +20,11 @@
 
 # Introduction
 
-Cette portion avancée du tutoriel vous permettra de compléter l'inplémentation du modèle proposé avec une base de données PostgreSQL en utilisant le logiciel Docker et les dépendances de flyway et de java JDBC en utilisant SpringBoot.
+Cette portion avancée du tutoriel vous permettra de compléter l'implémentation du modèle proposé avec une base de données PostgreSQL en utilisant le logiciel Docker et les dépendances de flyway et de java JDBC en utilisant SpringBoot.
 
 Pour toute information concernant les fonctionalités SpringBoot, référez-vous à la section «Quelques fonctionnalités de SpringBoot», pour en avoir la définition.
 
-Cette portion devrait vous prendre environ 45 minutes à apprendre et à implémenter.
+Cette portion du tutoriel devrait vous prendre environ 45 minutes à apprendre et à implémenter.
 
 Encore une fois, je vous souhaite un bon apprentissage!
 
@@ -39,11 +39,11 @@ Encore une fois, je vous souhaite un bon apprentissage!
 
 # Situation Logicielle Initiale
 
-Pour l'implémentation de ce tutoriel avancé, je prend pour acquis que votre application est maintenant pleinement implémenté selon le tutoriel SpringBoot de base. Votre application est donc une application web, RestFul qui respecte le modèle MVC. Il respecte donc le schémas suivant:
+Pour l'implémentation de ce tutoriel avancé, je prend pour acquis que votre application est maintenant pleinement implémenté et fonctionnelle selon le tutoriel SpringBoot de base. Votre application est donc une application web, RestFul qui respecte le modèle MVC. Elle respecte donc le schémas suivant:
 
 <img src="images\image-20191120132524670.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Vous avez une couche API qui est accessible par un client web de votre choix. Une couche service et une couche d'accès aux données. Votre modèle est une personne qui comporte un id et un nom comme attribut. Votre base de donnée est présentement en mémoire vive et n'est que conservée durant l'exécution de l'application.
+Vous avez une couche API qui est accessible par un client web de votre choix. Vous avez aussi une couche service et une couche d'accès aux données. Votre modèle est une personne qui comporte un id et un nom comme attributs. Votre base de données est présentement en mémoire vive et n'est que conservée durant l'exécution de l'application.
 
 # Application complète proposée
 
@@ -51,7 +51,7 @@ Le schémas suivant illustre la solution finale proposée pour l'application.
 
 <img src="images\image-20191120132430562.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Des clients tels que POSTMAN, une application Android ou une application web de toute sorte communiquera avec notre application depuis sa couche API. Pour la persistance des données, nous aurions le choix d'implémenter la base de données de notre choix (MySQL, PostgreSQL, mongoDB, etc.). Dans ce tutoriel, nous utiliserons Docker afin d'utiliser la base de données PostgreSQL (représentée par la figure de l'éléphant dans l'image ci-dessus).
+Des clients tels que POSTMAN, une application Android ou une application web pourront communiquer avec votre application depuis sa couche API. Pour la persistance des données, nous aurions le choix d'implémenter la base de données de notre choix (MySQL, PostgreSQL, mongoDB, etc.). Dans ce tutoriel, nous utiliserons Docker afin d'utiliser la base de données PostgreSQL (représentée par la figure de l'éléphant dans l'image ci-dessus).
 
 # Démarrage d'une instance PostgreSQL DB
 
@@ -87,11 +87,11 @@ Nous exposons donc le port 5432 sur «localhost» pour l'utilisation de notre ba
 
 # Connexion initiale à la base de données
 
-Nous utiliserons la 2e implémentation de l'interface «PersonDataAccessInterface.java» pour la connexion et l'implémentation de interaction avec notre base de données. Simplement pour vous le rappeler, il s'agit de la classe «PersonDataAccessNouvelleImplementation.java» dans le package «dataAccess».
+Nous utiliserons la 2e implémentation de l'interface «PersonDataAccessInterface.java» pour la connexion et l'implémentation de l'interaction avec notre base de données. Simplement pour vous le rappeler, il s'agit de la classe «PersonDataAccessNouvelleImplementation.java» dans le package «dataAccess».
 
 Nous utiliserons un fichier «application.yml» que nous insèrerons dans le dossier «%votreApplication%/src/main/ressources» afin d'insérer les détails de connexion à la base de données.
 
-Commencez pas supprimer le fichier «application.properties». Créez maintenant le fichier «application.yml» tel que les images ci-dessous le démontrent. Assurez-vous de respecter l'indentation dans le fichier «application.yml».
+Commencez par supprimer le fichier «application.properties». Créez maintenant le fichier «application.yml» tel que les images ci-dessous le démontrent. Assurez-vous de respecter l'indentation dans le fichier «application.yml», lorsque vous le coderez.
 
 <img src="images\image-20191120140320513.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -101,9 +101,9 @@ Sur la ligne «jdbc-url», nous définissons que le nom de notre base de donnée
 
 # Ajout de dépendances au fichier POM.XML
 
-Nous aurons maintenant besoin besoin d'ajouter certaines dépendances au fichier «POM.XML», situé dans le dossier racine de votre projet.
+Nous aurons maintenant besoin d'ajouter certaines dépendances au fichier «POM.XML», situé dans le dossier racine de votre projet.
 
-Insérez les dépendances suivantes dans le tag xml <dependancies>:
+Insérez les dépendances suivantes dans le tag xml "dependancies":
 
 1. spring-boot-starter-jdbc
 2. postgresql
