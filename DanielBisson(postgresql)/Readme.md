@@ -127,7 +127,7 @@ La classe «PostgresDataSource.java» sera utilisée afin d'effectuer des config
 
 Nous devrons maintenant créer un dossier dans «%votreApplication"/src/main/ressources» nommé «db». À l'intérieur de «db», nous créerons un autre dossier nommé «migration». À l'intérieur du dossier «migration», créez un fichier nommé «V1PersonTable.sql». Il est très important ici de prendre exactement ce nom de fichier. Notez les 2 «underscore» de suite dans le nom du fichier. 
 
-Vous aurez donc une structure telle que l'image ci-dessous et votre fichier «V1__PersonTable.sql» sera implémenté tel que le démontre l'image suivante.
+Vous aurez donc une structure telle que l'image ci-dessous et votre fichier "V1__PersonTable.sql" sera implémenté tel que le démontre l'image suivante.
 
 <img src="images\image-20191120143957153.png" alt="image-20191117114342901" style="zoom:150%;" />
 
