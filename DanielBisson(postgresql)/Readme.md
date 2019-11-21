@@ -15,7 +15,7 @@
 13. Implémentation de notre couche d'accès aux données
 14. Démonstration finale
 15. Conclusion
-16. Quelques fonctionnalités de SpringBoot
+16. Fonctionnalités de Springboot utilisés dans ce tutoriel
 17. Dépannage (Troubleshooting)
 
 # Introduction
@@ -296,7 +296,7 @@ Il permet entre autre, comme présenté dans ce tutoriel, de créer une applicat
 
 Ceci termine la présentation des fonctionnalités pour le but du tutoriel SpringBoot. En espérant que le tout vous aura plut et que vous aurez apprécié en apprendre ce que SpringBoot a à offrir au monde de l'informatique.
 
-# Quelques fonctionnalités de SpringBoot
+# Fonctionnalités de Springboot utilisés dans ce tutoriel
 
 ***@Configuration:*** Indicates that a class declares one or more `@Bean` methods and may be processed by the Spring container to generate bean definitions and service requests for those beans at runtime.
 

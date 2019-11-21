@@ -5,7 +5,7 @@
 3. Construction initiale du projet
 4. Intégration à votre IDE
 5. Création d'un squelette de projet au format Modèle-Vue-Contrôleur
-6. Quelques fonctionnalités de Springboot
+6. Fonctionnalités de Springboot utilisés dans ce tutoriel
 7. Implémentation de l'API Restful du modèle MVC
 8. POSTMAN
 9. Récupération du contenu de la base de données fictive
@@ -146,7 +146,7 @@ Créez maintenant l'implémentation de base des classes selon les images ci-dess
 
 <img src="images\image-20191117131502939.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-# Quelques fonctionnalités de SpringBoot
+# Fonctionnalités de Springboot utilisés dans ce tutoriel
 
 Pour la suite du tutoriel, plusieurs fonctionnalités de SpringBoot seront utilisés. Référez-vous aux explications suivantes pour comprendre leur utilité et leur fonctionnement.
 
