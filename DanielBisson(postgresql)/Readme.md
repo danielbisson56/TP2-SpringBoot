@@ -109,17 +109,17 @@ Insérez les dépendances suivantes dans le tag xml "dependancies":
 2. postgresql
 3. flyway-core
 
-Référez-vous à l'image suivante.
+Référez-vous à l'image suivante au besoin.
 
 <img src="images\image-20191120141125451.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 # Création d'une source de données
 
-Ajoutez maintenant un package dans «%votreApplication%/src/main/java» et nommez le «datasource». Ajoutez la classe « PostgresDataSource.java »suivantes au package .
+Ajoutez maintenant un package dans «%votreApplication%/src/main/java» et nommez le «datasource». Ajoutez la classe « PostgresDataSource.java » au package .
 
 ### PostgresDataSource.java
 
-La classe «PostgresDataSource.java» sera utilisée afin d'effectuer des configurations.  Elle prendra donc l'annotation @Configuration, qui détermine également qu'une de ses méthodes sera instanciée comme un «Bean». On l'instanciera d'ailleurs comme un «Bean» avec l'annotation @Bean. Notez également l'annotation «@ConfigurationProperties("app.datasource")» qui fait référence à notre fichier de connexion «application.yml». La classe sera donc sera implémentée comme suit.
+La classe «PostgresDataSource.java» sera utilisée afin d'effectuer des configurations.  Elle prendra donc l'annotation @Configuration, qui détermine également qu'une de ses méthodes sera instanciée comme un «Bean». On l'instanciera d'ailleurs comme un «Bean» avec l'annotation @Bean. Notez également l'annotation «@ConfigurationProperties("app.datasource")» qui fait référence à notre fichier de connexion «application.yml», où «app.datasource» est définit. La classe sera donc sera implémentée comme suit.
 
 <img src="images\image-20191120142135650.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -127,7 +127,7 @@ La classe «PostgresDataSource.java» sera utilisée afin d'effectuer des config
 
 Nous devrons maintenant créer un dossier dans «%votreApplication"/src/main/ressources» nommé «db». À l'intérieur de «db», nous créerons un autre dossier nommé «migration». À l'intérieur du dossier «migration», créez un fichier nommé «V1PersonTable.sql». Il est très important ici de prendre exactement ce nom de fichier. Notez les 2 «underscore» de suite dans le nom du fichier. 
 
-Vous aurez donc une structure telle que l'image ci-dessous et votre fichier «V1PersonTable.sql» sera implémenté tel que le démontre l'image suivante.
+Vous aurez donc une structure telle que l'image ci-dessous et votre fichier «V1__PersonTable.sql» sera implémenté tel que le démontre l'image suivante.
 
 <img src="images\image-20191120143957153.png" alt="image-20191117114342901" style="zoom:150%;" />
 
