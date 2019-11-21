@@ -155,7 +155,7 @@ Nous entrerons maintenant dans notre contenant avec notre nom d'utilisateur (voi
 
 *psql -U postgres*
 
-Pour afficher la liste des bases de données dans votre contenant, tapez «\l». Pour l'instant, la table comportera 3 entrées, qui sont les entrées par défauts.
+Pour afficher la liste des bases de données dans votre contenant, tapez «\l». Pour l'instant, la liste comportera 3 entrées, qui sont les entrées par défauts.
 
 <img src="images\image-20191120150023821.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -165,7 +165,7 @@ Nous allons maintenant créer une nouvelle base de données. Puisque vous êtes 
 
 *CREATE DATABASE tp2database;*
 
-«tp2database» est le nom de base de donnée provenant du fichier «application.yml» créé précédemment. Tapez «*\l*» à nouveau dans l'invite de commande. Vous verrez que vous avez maintenant créer votre base de données.
+«tp2database» est le nom de base de donnée provenant du fichier «application.yml» créé précédemment. 
 
 Si vous tapez à nouveau la commande «\l», vous pourrez vérifier la création de votre base de données.
 
@@ -177,7 +177,7 @@ Tapez la commande «*\c tp2database*». Vous vous connecterez alors à la base d
 
 <img src="images\image-20191120182738042.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Avec les commandes «*\d*» et «*\dt*», vous serez en mesure de confirmer que vous base de données est vide de tout éléments (\d) et qu'elle ne possède présentement aucune table (\dt).
+Avec les commandes «*\d*» et «*\dt*», vous serez en mesure de confirmer que votre base de données est vide de tout éléments (\d) et qu'elle ne possède présentement aucune table (\dt).
 
 <img src="images\image-20191120183019832.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -209,7 +209,7 @@ Tapez la commande «\d person» afin de décrire la table «person». Vous obtie
 
 <img src="images\image-20191120185013864.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Avec la commande SQL «*SELECT * FROM person;*», nous sommes en mesure de vérifier que la tabler est présentement vide.
+Avec la commande SQL «*SELECT * FROM person;*», nous sommes en mesure de vérifier que la table est présentement vide.
 
 Nous allons maintenant générer des entrées dans notre table.
 
@@ -239,11 +239,11 @@ Insérez donc quelques personnes de votre choix. Vous devriez être capable d'ob
 
 # Implémentation de notre couche d'accès aux données
 
-Nous avons maintenant une base de données et quelques personnes présentes dans notre table «person». Nous avons maintenant besoin d'implémenter le code java nécessaire pour accéder à notre base de données. Fermez tout d'abord le processus Spring en cours d'exécution.
+Nous avons maintenant une base de données et quelques personnes présentent dans notre table «person». Nous aurons maintenant besoin d'implémenter le code java nécessaire pour accéder à notre base de données, depuis notre couche d'accès aux données. Fermez tout d'abord le processus Spring en cours d'exécution.
 
 Ouvrez la classe «PersonDataAccessNouvelleImplementation.java».
 
-Puisque le but de ce tutoriel est d'apprendre les fonctionnalités de SpringBoot, implémentez directement la classe comme suit:
+Puisque le but de ce tutoriel est d'apprendre les fonctionnalités de SpringBoot et non pas l'implémentation spécifique aux données dans une base de données, implémentez directement la classe comme suit:
 
 ### PersonDataAccessNouvelleImplementation.java
 
@@ -255,14 +255,14 @@ Puisque le but de ce tutoriel est d'apprendre les fonctionnalités de SpringBoot
 
 Les points importants seront les suivants:
 
-1. Assurez-vous de faire le bon «import» pour la classe JDBCTemplate;
-2. Noubliez pas que le service fait le lien avec l'implémentation de l'interface via @Qualifier("nouvelleImplementation") et que le tout est relié à l'annotation @Repository("nouvelleImplementation") de votre classe PersonDataAccessNouvelleImplementation.java.
-3. Le constructeur sera @Autowired (injection de dépendances)
-4. Nous implémenterons seulement les méthodes selectAllPeople() et selectPersonById() pour le but de la démonstration;
+1. Assurez-vous de faire le bon «import» pour la classe JDBCTemplate ( org.springframework.jdbc.core.JdbcTemplate;);
+2. Noubliez pas que le service fait le lien avec l'implémentation de l'interface via @Qualifier("nouvelleImplementation") et que le tout est relié à l'annotation @Repository("nouvelleImplementation") de votre classe PersonDataAccessNouvelleImplementation.java;
+3. Le constructeur sera @Autowired (injection de dépendances);
+4. Nous implémenterons seulement les méthodes selectAllPeople() et selectPersonById() pour le but de la démonstration.
 
 # Démonstration finale
 
-Sauvegardez vos changements et redémarrez maintenant votre application java.
+Sauvegardez vos changements et redémarrez maintenant votre application Spring.
 
 Nous avons donc un serveur tomcat en écoute de clients sur le port 8080. Notre application comporte trois couches (API, SERVICE, DATA ACCESS) et est connectée à une base de données PostgreSQL sur le port 5432. Nous avons une base de données nommée «tp2database» qui comporte la table «person» qui comporte maintenant quelques entrées.
 
@@ -292,9 +292,9 @@ Pour conclure, SpringBoot offre une vaste gamme d'options de création d'applica
 
 Il utilise des annotations afin de créer automatiquement des liens qui facilitent l'implémentation lors de la création d'une application.
 
-Il permet entre autre, somme présenté dans ce tutoriel, de créer une application web Restful selon le modèle MVC avec une base de données fonctionnelle en moins de 2 heures.
+Il permet entre autre, comme présenté dans ce tutoriel, de créer une application web Restful selon le modèle MVC avec une base de données fonctionnelle en moins de 2 heures.
 
-Ceci termine la présentation des fonctionnalités pour le but du tutoriel SpringBoot. En espérant que le tout vous aura plut.
+Ceci termine la présentation des fonctionnalités pour le but du tutoriel SpringBoot. En espérant que le tout vous aura plut et que vous aurez apprécié en apprendre ce que SpringBoot a à offrir au monde de l'informatique.
 
 # Quelques fonctionnalités de SpringBoot
 
