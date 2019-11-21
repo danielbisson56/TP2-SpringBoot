@@ -2,13 +2,11 @@
 
 ------
 
-[TOC]
-
-------
-
 ## **<u>Description :</u>**
 
 C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source et en Java. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants.  Spring boot a été fondé par Pivotal Team 
+
+------
 
 ## **<u>Pourquoi Choisir Spring boot :</u>**
 
@@ -73,10 +71,6 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 
 
-
-
-
-
 <u><img src="./Image/Spring/Spring_architecture_2.png" style = "float: left;"  height="50%" width="50%"  ></u>
 
 
@@ -113,12 +107,12 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ### <u>**Options spécifiques:**</u>
 
-| <u><img src="./Image/SpringBootDependency/2.JPG" style = "float: left;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/3.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/4.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/5.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
+| <u><img src="./Image/SpringBootDependency/2.JPG" style = "float: top;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/3.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/4.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/5.JPG" style = "float: top;"  height="100%" width="100%"  ></u> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <u><img src="./Image/SpringBootDependency/5_5.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/7.JPG" style = "float: left;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/8.JPG" style = "float: left;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/9.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
-| <u><img src="./Image/SpringBootDependency/10.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/11.JPG" style = "float: left;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/12.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/12_5.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
-| <u><img src="./Image/SpringBootDependency/14.JPG" style = "float: left;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/15.JPG" style = "float: left;"  height="70%" width="70%"  ></u> | <u><img src="./Image/SpringBootDependency/15_5.JPG" style = "float: left;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/17.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
-| <u><img src="./Image/SpringBootDependency/18.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/19.JPG" style = "float: left;"  height="80%" width="80%"  ></u> |                                                              |                                                              |
+| <u><img src="./Image/SpringBootDependency/5_5.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/7.JPG" style = "float: top;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/8.JPG" style = "float: top;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/9.JPG" style = "float: top;"  height="100%" width="100%"  ></u> |
+| <u><img src="./Image/SpringBootDependency/10.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/11.JPG" style = "float: top;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/12.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/12_5.JPG" style = "float: top;"  height="100%" width="100%"  ></u> |
+| <u><img src="./Image/SpringBootDependency/14.JPG" style = "float: top;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/15.JPG" style = "float: top;"  height="70%" width="70%"  ></u> | <u><img src="./Image/SpringBootDependency/15_5.JPG" style = "float: top;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/17.JPG" style = "float: top;"  height="100%" width="100%"  ></u> |
+| <u><img src="./Image/SpringBootDependency/18.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/19.JPG" style = "float: top;"  height="80%" width="80%"  ></u> |                                                              |                                                              |
 
 ------
 
