@@ -2,9 +2,9 @@
 
 ## **<u>Description :</u>**
 
+C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source et en Java. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants.  Spring boot a été fondé par Pivotal Team 
 
-
-### **<u>Pourquoi Choisir Spring boot :</u>**
+## **<u>Pourquoi Choisir Spring boot :</u>**
 
 - Spring boot accélère et facilite la création d'applications nécessitant le Framework Spring.
 
@@ -32,38 +32,64 @@
 
 - Il nécessite aucune configuration d'Xml comme Spring.
 
+------
+
 ## <u>Évolution de Spring et Spring boot :</u>
 
-**<u>Ligne de temps Spring :</u>**
+| <u>Ligne de temps</u> |                        |
+| --------------------- | ---------------------- |
+| **<u>Spring</u>**     | <u>**Spring boot**</u> |
+| 0.9 (2003)            | 1.0.0 (Avril 2014)     |
+| 1.0 (2004)            | 1.1 (Juin 2014)        |
+| 2.0 (2006)            | 1.2 (2015)             |
+| 2.5 (2007)            | 1.3 (2016)             |
+| 3.0 (2009)            | 1.4 (Juin 2016)        |
+| 3.1 (2011)            | 1.5 (2017)             |
+| 4.0 (2013)            | 2.0 (2018)             |
+| 4.2 (2015)            | 2.1 (Octobre 2018)     |
+| 5 (2017)              | 2.2 (2019)             |
+| 5.1 (2018)            |                        |
+| 5.2 (2019)            |                        |
 
-- 0.9 (2003)
-- 1.0 (2004)
-- 2.0 (2006)
-- 2.5 (2007)
-- 3.0 (2009)
-- 3.1 (2011)
-- 4.0 (2013)
-- 4.2 (2015)
-- 4.3 (2016)
-- 5 (2017)
-- 5.1 (2018)
-- 5.2 (2019)
+------
 
-<u>**Ligne de temps Spring boot :**</u>
+## <u>**Architecture :**</u>
 
-- 1.0.0 (Avril 2014)
-- 1.1 (Juin 2014)
-- 1.2 (2015)
-- 1.3 (2016)
-- 1.4 (Juin 2016)
-- 1.5 (2017)
-- 2.0 (2018)
-- 2.1 (Octobre 2018)
-- 2.2 (2019)
+<u><img src="./Image/SpringBoot/SpringBoot_architecture.png" style = "float: left;"  height="50%" width="50%"  ></u>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<u><img src="./Image/Spring/Spring_architecture_2.png" style = "float: left;"  height="50%" width="50%"  ></u>
+
+
+
+
+
+
+
+
+
+
+
+
+
+------
 
 ## <u>**Options :**</u>
 
-<img src="./Image/SpringBootDependency/0.JPG" style = "float: left;"  height="20%" width="20%"  > <img src="./Image/SpringBootDependency/1.JPG" style = "float: left;"  height="17%" width="17%"  >
+<u><img src="./Image/SpringBootDependency/0.JPG" style = "float: left;"  height="20%" width="20%"  > <img src="./Image/SpringBootDependency/1.JPG" style = "float: left;"  height="17%" width="17%"  ></u>
 
 
 
@@ -79,32 +105,36 @@
 
 
 
-### **<u>Options spécifiques:</u>**
+### <u>**Options spécifiques:**</u>
 
-| <img src="./Image/SpringBootDependency/2.JPG" style = "float: left;"  height="80%" width="80%"  > | <img src="./Image/SpringBootDependency/3.JPG" style = "float: left;"  height="100%" width="100%"  > | <img src="./Image/SpringBootDependency/4.JPG" style = "float: left;"  height="100%" width="100%"  > | <img src="./Image/SpringBootDependency/5.JPG" style = "float: left;"  height="100%" width="100%"  > |
+| <u><img src="./Image/SpringBootDependency/2.JPG" style = "float: left;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/3.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/4.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/5.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./Image/SpringBootDependency/5_5.JPG" style = "float: left;"  height="100%" width="100%"  > | <img src="./Image/SpringBootDependency/7.JPG" style = "float: left;"  height="75%" width="75%"  > | <img src="./Image/SpringBootDependency/8.JPG" style = "float: left;"  height="75%" width="75%"  > | <img src="./Image/SpringBootDependency/9.JPG" style = "float: left;"  height="100%" width="100%"  > |
-| <img src="./Image/SpringBootDependency/10.JPG" style = "float: left;"  height="100%" width="100%"  > | <img src="./Image/SpringBootDependency/11.JPG" style = "float: left;"  height="75%" width="75%"  > | <img src="./Image/SpringBootDependency/12.JPG" style = "float: left;"  height="100%" width="100%"  > | <img src="./Image/SpringBootDependency/12_5.JPG" style = "float: left;"  height="100%" width="100%"  > |
-| <img src="./Image/SpringBootDependency/14.JPG" style = "float: left;"  height="80%" width="80%"  > | <img src="./Image/SpringBootDependency/15.JPG" style = "float: left;"  height="70%" width="70%"  > | <img src="./Image/SpringBootDependency/15_5.JPG" style = "float: left;"  height="80%" width="80%"  > | <img src="./Image/SpringBootDependency/17.JPG" style = "float: left;"  height="100%" width="100%"  > |
-| <img src="./Image/SpringBootDependency/18.JPG" style = "float: left;"  height="100%" width="100%"  > | <img src="./Image/SpringBootDependency/19.JPG" style = "float: left;"  height="80%" width="80%"  > |                                                              |                                                              |
+| <u><img src="./Image/SpringBootDependency/5_5.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/7.JPG" style = "float: left;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/8.JPG" style = "float: left;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/9.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
+| <u><img src="./Image/SpringBootDependency/10.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/11.JPG" style = "float: left;"  height="75%" width="75%"  ></u> | <u><img src="./Image/SpringBootDependency/12.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/12_5.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
+| <u><img src="./Image/SpringBootDependency/14.JPG" style = "float: left;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/15.JPG" style = "float: left;"  height="70%" width="70%"  ></u> | <u><img src="./Image/SpringBootDependency/15_5.JPG" style = "float: left;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/17.JPG" style = "float: left;"  height="100%" width="100%"  ></u> |
+| <u><img src="./Image/SpringBootDependency/18.JPG" style = "float: left;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/19.JPG" style = "float: left;"  height="80%" width="80%"  ></u> |                                                              |                                                              |
+
+------
 
 ## <u>Exemple d'utilisation :</u>
 
-- <a href="/Thymeleaf/README.md">Thymeleaf</a>
-- <a href="/Thymeleaf/README.md">Api Rest</a>
-- <a href="/Thymeleaf/README.md">JDBC avec PostgreSQL</a>
-- <a href="/Thymeleaf/README.md">JDBC avec MySQL</a>
+- <u><a href="/Thymeleaf/README.md">Thymeleaf</a></u>
+- <u><a href="/Thymeleaf/README.md">Api Rest</a></u>
+- <u><a href="/Thymeleaf/README.md">JDBC avec PostgreSQL</a></u>
+- <u><a href="/Thymeleaf/README.md">JDBC avec MySQL</a></u>
 
-## **<u>Références:</u>**
+------
 
-https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm
+## <u>**Références:**</u>
 
-https://www.javatpoint.com/spring-boot-tutorial
+<u>https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm</u>
 
-https://en.wikipedia.org/wiki/Spring_Framework
+<u>https://www.javatpoint.com/spring-boot-tutorial</u>
 
-https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions
+<u>https://en.wikipedia.org/wiki/Spring_Framework</u>
 
-https://www.quickprogrammingtips.com/spring-boot/history-of-spring-framework-and-spring-boot.html
+<u>https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions</u>
 
-https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
+<u>https://www.quickprogrammingtips.com/spring-boot/history-of-spring-framework-and-spring-boot.html</u>
+
+<u>https://mvnrepository.com/artifact/org.springframework.boot/spring-boot</u>
