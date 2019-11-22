@@ -88,7 +88,7 @@ On obtient le résultat ci-dessous.
 
 6- On créer nos 3 classes (Application.java, HomeController.java et User.java).
 
-<img style="float: left;" src="../Image/InstallUseSpringTool4/10.JPG">
+<img style="float: left;" src="../Image/InstallUseSpringTool4/10.jpg">
 
 7 - Écrire le programme.
 
