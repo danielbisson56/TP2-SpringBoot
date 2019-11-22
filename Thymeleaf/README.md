@@ -54,7 +54,7 @@ Il faut télécharger et installer l'ide Spring Tools 4 for Eclipse permettant d
 
 1- Création d'un nouveau projet Spring Boot.
 
-<img style="float: left;" src="../Image/InstallUseSpringTool4/4_5.JPG">
+<img style="float: left;" src="../Image/InstallUseSpringTool4/19.JPG">
 
 2- On entre la description de notre projet. On n'a pas besoin de toucher au Service URL, parce que c'est le site pour Spring Initializr. Spring tools 4 en a besoin pour générer le projet initial.
 
