@@ -238,7 +238,7 @@ public class User {
 
 9- Exécuter en utilisant Application.java comme main du programme.
 
-<img style="float: left;" src="../Image/InstallUseSpringTool4/14.JPG">
+<img style="float: left;" src="../Image/InstallUseSpringTool4/14.jpg">
 
 Affichage de l'exécution de Spring dans la console.
 
