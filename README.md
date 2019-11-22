@@ -59,13 +59,11 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ## <ins>**Architecture :**</ins>
 
-<u><img src="./Image/SpringBoot/SpringBoot_architecture.png" style = "float: left;"  height="50%" width="50%"  ></u>
+<u><img src="./Image/SpringBoot/SpringBoot_architecture2.png" style = "float: left;"  height="50%" width="50%"  ></u>
 
 
 
 
-
-<u><img src="./Image/Spring/Spring_architecture_2.png" style = "float: left;"  height="50%" width="50%"  ></u>
 
 
 
