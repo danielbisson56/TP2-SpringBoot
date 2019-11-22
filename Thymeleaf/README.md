@@ -1,32 +1,98 @@
 # **Spring boot with Thymeleaf**
 
-<img style="float: left;" src="./Img/ThymeleafIcon.jpg">
+<img style="float: left;" src="../Image/Thymeleaf/ThymeleafIcon.jpg">
 
-## **<u>Préroquis :</u>**
+------
 
-### **<u>Java :</u>**
+## **<ins>Description:</ins>**
+
+Thymeleaf est un Template Java XML/ XHTML/ HTML5  qui permet de travailler sur un environnement web. Il est utilisé comme la couche vue des applications basées sur le patron de conception MVC . 
+
+------
+
+## **<ins>Préroquis :</ins>**
+
+### **<ins>Java :</ins>**
 
 On doit télécharger et installer java 8 pour Windows X32 ou X64.
 
-<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Download java 8u231 </a>
+<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Télécharger java 8u231 </a>
 
-<img style="float: left;" src="./Img/JavaDownloadPage.JPG">
+<img style="float: left;" src="../Image/Java/JavaDownloadPage.JPG">
 
-### **<u>Ide Spring boot :</u>**
+### **<ins>Ide Spring boot :</ins>**
 
 Il faut télécharger et installer l'ide Spring Tools 4 for Eclipse permettant de simplifier l'utilisation de Spring.
 
-<a href="https://spring.io/tools">Download Spring tools 4</a>
+<a href="https://spring.io/tools">Télécharger Spring tools 4</a>
 
-<img style="float: left;" src="./Img/Ide.jpg">
+<img style="float: left;" src="../Image/SpringBootIde/Ide.jpg">
 
-## **<u>Configuration de Spring tools 4:</u>**
+<ins>**Installation :**</ins>
 
+<img style="float: left;" src="../Image/InstallUseSpringTool4/0.JPG">
 
+1- Extraire l'ide en exécutant le .jar.
 
-## **<u>Programme :</u>**
+<img style="float: left;" src="../Image/InstallUseSpringTool4/1.JPG">
 
-**<u>pom.xml</u>**
+2- Une fois extrait, on exécute l'exécutable.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/2.JPG">
+
+3- Il nous demande de sélectionner un dossier de sauvegarde par défaut.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/3.JPG">
+
+4- Voici l'ide complet pour Spring boot.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/4.JPG">
+
+------
+
+## **<ins>Création d'une application utilisant Thymeleaf :</ins>**
+
+1- Création d'un nouveau projet Spring Boot.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/4_5.JPG">
+
+2- On entre la description de notre projet. On n'a pas besoin de toucher au Service URL, parce que c'est le site pour Spring Initializr. Spring tools 4 en a besoin pour générer le projet initial.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/7.JPG">
+
+Group = le nom du paquet.
+
+Artifact = le nom du .jar généré, normalement c'est le même que la section (Name).
+
+3- On sélectionne les 2 dépendances pour notre projet. Un fichier pom.xml est généré parce qu'on utilise Maven.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/8.JPG">
+
+On obtient le résultat ci-dessous.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/9.JPG">
+
+4- On doit ajouter cette dépendance au fichier pom.xml pour que le programme fonctionne.
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-solr</artifactId>
+</dependency>
+```
+5- On update notre projet avec Maven.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/11.JPG">
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/12.JPG">
+
+6- On créer nos 3 classes (Application.java, HomeController.java et User.java).
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/10.JPG">
+
+7 - Écrire le programme.
+
+**<ins>pom.xml</ins>**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,7 +152,7 @@ Il faut télécharger et installer l'ide Spring Tools 4 for Eclipse permettant d
 </project>
 ```
 
-<u>**Application.java**</u>
+<ins>**Application.java**</ins>
 
 ```java
 package com.example.demo;
@@ -103,7 +169,7 @@ public class Application {
 }
 ```
 
-**<u>HomeController.java</u>**
+**<ins>HomeController.java</ins>**  (Contrôleur du patron MVC)
 
 ```java
 package com.example.demo;
@@ -132,11 +198,13 @@ public class HomeController {
 }
 ```
 
-### **<u>Erreurs possibles :</u>**
+(value="/save") du @RequestMapping permet de dire quoi afficher dans l'url lorsqu'on fait un Post d'informations vers l'Html.
+
+### **<ins>Erreurs possibles :</ins>**
 
 Il ne faut pas nommé le nom de votre classe Controller parce que cela interfère avec le tag @Controller.
 
-**<u>User.java</u>**
+**<ins>User.java</ins>**
 
 ```java
 package com.example.demo;
@@ -164,5 +232,31 @@ public class User {
 }
 ```
 
+8- Fichier finale avant l'exécution du programme.
 
+<img style="float: left;" src="../Image/InstallUseSpringTool4/12_5.JPG">
+
+9- Exécuter en utilisant Application.java comme main du programme.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/14.JPG">
+
+Affichage de l'exécution de Spring dans la console.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/15.JPG">
+
+10- Ouvrir votre browser préféré et entrer localhost:8080.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/15_5.JPG">
+
+11- Inscrire des informations tests et faire Submit.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/17.JPG">
+
+On obtient le résultat ci-dessous.
+
+<img style="float: left;" src="../Image/InstallUseSpringTool4/18.JPG">
+
+## **<ins>Conclusion :</ins>**
+
+L'application peut sembler simpliste, mais Thymeleaf permet à partir d'un programme de construire une page Html5 en envoyant des valeurs bidirectionnelles entre notre programme java et l'interface web.
 
