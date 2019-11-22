@@ -2,7 +2,7 @@
 
 ------
 
-## **<u>Description :</u>**
+<b>Description :</b>
 
 C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source et en Java. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants.  Spring boot a été fondé par Pivotal Team.
 
