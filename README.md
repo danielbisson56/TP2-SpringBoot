@@ -8,7 +8,7 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ------
 
-## **<u>Pourquoi Choisir Spring boot :</u>**
+## **<ins>Pourquoi Choisir Spring boot :</ins>**
 
 - Spring boot accélère et facilite la création d'applications nécessitant le Framework Spring.
 
@@ -38,7 +38,7 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ------
 
-## <u>Évolution de Spring et Spring boot :</u>
+## <ins>Évolution de Spring et Spring boot :</ins>
 
 | <u>Ligne de temps</u> |                        |
 | --------------------- | ---------------------- |
@@ -57,7 +57,7 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ------
 
-## <u>**Architecture :**</u>
+## <ins>**Architecture :**</ins>
 
 <u><img src="./Image/SpringBoot/SpringBoot_architecture.png" style = "float: left;"  height="50%" width="50%"  ></u>
 
@@ -81,7 +81,7 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ------
 
-## <u>**Options :**</u>
+## <ins>**Options :**</ins>
 
 <u><img src="./Image/SpringBootDependency/0.JPG" style = "float: left;"  height="20%" width="20%"  > <img src="./Image/SpringBootDependency/1.JPG" style = "float: left;"  height="17%" width="17%"  ></u>
 
@@ -99,7 +99,7 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 
 
-### <u>**Options spécifiques:**</u>
+### <ins>**Options spécifiques:**</ins>
 
 | <u><img src="./Image/SpringBootDependency/2.JPG" style = "float: top;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/3.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/4.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/5.JPG" style = "float: top;"  height="100%" width="100%"  ></u> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -110,7 +110,7 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ------
 
-## <u>Tutoriel d'utilisation de Spring Boot :</u>
+## <ins>Tutoriel d'utilisation de Spring Boot :</ins>
 
 - <u><a href="/Thymeleaf/README.md">Thymeleaf</a></u>
 - <u><a href="/RestApi/README.md">Api Rest</a></u>
@@ -119,7 +119,7 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 ------
 
-## <u>**Références:**</u>
+## <ins>**Références:**</ins>
 
 <u>https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm</u>
 
