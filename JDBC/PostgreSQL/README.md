@@ -39,7 +39,7 @@ Encore une fois, je vous souhaite un bon apprentissage!
 
 # Situation Logicielle Initiale
 
-Pour l'implémentation de ce tutoriel avancé, je prend pour acquis que votre application est maintenant pleinement implémenté et fonctionnelle selon le tutoriel SpringBoot de base. Votre application est donc une application web, RestFul qui respecte le modèle MVC. Elle respecte donc le schémas suivant:
+Pour l'implémentation de ce tutoriel avancé, je prend pour acquis que votre application est maintenant pleinement implémenté et fonctionnelle selon le tutoriel SpringBoot «Rest API». Votre application est donc une application web, RestFul qui respecte le modèle MVC. Elle respecte donc le schémas suivant:
 
 <img src="images\image-20191120132524670.png" alt="image-20191117114342901" style="zoom:150%;" />
 
