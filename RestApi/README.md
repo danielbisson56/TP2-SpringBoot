@@ -23,9 +23,9 @@ Ce tutoriel vous présentera la marche à suivre pour l'utilisation de Springboo
 
 Dans ce tutoriel, vous implémenterez le code «backend» pour les méthodes REST HTTP GET, POST, PUT et DELETE.
 
-Pour terminer, un tutoriel avancé vous présentera une marche à suivre pour joindre une base de données PostgreSQL en utilisant flyway, le logiciel Docker et SpringBootJDBC.
+Pour terminer, un tutoriel avancé vous présentera une marche à suivre pour joindre une base de données PostgreSQL en utilisant flyway, le logiciel Docker et SpringBootJDBC à votre application Restful. Pour poursuivre avec le tutoriel avancé, référez-vous à «JDBC avec PostgreSQL» disponible dans le dossier «TP2-SpringBoot/JDBC/PostgreSQL/Readme.md».
 
-Le tutoriel de base vous prendra environ une heure et demi à compléter. Le tutoriel avancé demandera un 45 minutes additionnel. Je vous souhaite un bon apprentissage!
+Ce tutoriel de base pour l'application RestFul selon le modèle MVC vous prendra environ une heure et demi à compléter. Le tutoriel avancé demandera un 45 minutes additionnel. Je vous souhaite un bon apprentissage!
 
 # Dépendances
 
