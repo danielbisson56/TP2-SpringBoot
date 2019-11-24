@@ -4,7 +4,11 @@
 
 ## <ins>**Description :**</ins>
 
-C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source et en Java. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants.  Spring boot a été fondé par Pivotal Team.
+Selon la description de «Tutorialspoint» (https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm), SpringBoot est un logiciel ouvert basé sur le language de programmation Java. C'est une couche d'abstraction qui opère au-dessus du «framework» Spring. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants. 
+
+SpringBoot permet entre autre la création d'applications Spring qui sont des micro-services indépendants prêt au déploiement de façon rapide, en facilitant la configuration nécessaire pour l'utilisation de Spring.
+
+Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 
 ------
 
@@ -35,6 +39,8 @@ C'est une couche d'abstraction au dessus du Framework Spring. Il est open-source
 
 
 - Il nécessite aucune configuration d'Xml comme Spring.
+
+
 
 ------
 
