@@ -40,6 +40,21 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 
 - Il nécessite aucune configuration d'Xml comme Spring.
 
+## Ses avantages
+
+1. Déploiement d'application facile;
+2. Facilité à comprendre le «framework» Spring et facilité à développer une application Spring;
+3. Scalabilité simplifiée;
+4. Compatible avec le principe de «Containers» (Logiciel Docker par exemple);
+5. Configuration de Spring simplifiée;
+6. Temps de production d'application réduit.
+
+## Ses inconvénients
+
+1. Les configurations automatiques de SpringBoot peuvent ne pas combler les besoins spécifiques d'un projet de développement d'application;
+2. SpringBoot inclut parfois des dépendances qui ne seront pas utilisés, produisant une application plus volumineuse que ce qui est requis;
+3. Quoique bien conçu pour le développement initial d'application Spring, il sera difficile de convertir une application Spring en application SpringBoot par la suite.
+
 
 
 ------
