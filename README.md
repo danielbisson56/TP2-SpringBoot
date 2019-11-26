@@ -4,7 +4,7 @@
 
 Selon la description de «Tutorialspoint» (https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm), SpringBoot est un logiciel ouvert basé sur le langage de programmation Java. C'est une couche d'abstraction qui opère au-dessus du «framework» Spring. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants. 
 
-SpringBoot permet entre autre la création d'applications Spring qui sont des micro-services indépendants prêt au déploiement de façon rapide, en facilitant la configuration nécessaire pour l'utilisation de Spring.
+SpringBoot permet entre autres la création d'applications Spring qui sont des micro-services indépendants prêts au déploiement de façon rapide, en facilitant la configuration nécessaire pour l'utilisation de Spring.
 
 Spring boot a été développé par l'équipe Pivotal (https://pivotal.io/).
 
@@ -15,7 +15,7 @@ Spring boot a été développé par l'équipe Pivotal (https://pivotal.io/).
 
 <img src="./Image/Spring/spring-by-pivotal.png" style = "float: left;"  height="25%" width="25%"  >
 
-- Il a été développé selon le principe <u>R</u>apid <u>A</u>pplication <u>D</u>éveloppement. RAD permet d'être flexible aux changements et est destiné au projet devant être livré tôt (2-3 mois) . Il permet de découper un gros projet en petits et il focus sur la réutilisation de Template, d'outils, de processus et de code. Cela permet donc de réduire le temps de production de logiciels.
+- Il a été développé selon le principe <u>R</u>apid <u>A</u>pplication <u>D</u>éveloppement. RAD permet d'être flexible aux changements et est destiné au projet devant être livré tôt (2-3 mois) . Il permet de découper un gros projet en petits et ils mettent l'accent sur la réutilisation de Template, d'outils, de processus et de code. Cela permet donc de réduire le temps de production de logiciels.
 
 <img src="./Image/RAD/RAD-Model.png" style = "float: left"  height="50%" width="50%"  >
 
@@ -35,7 +35,7 @@ Spring boot a été développé par l'équipe Pivotal (https://pivotal.io/).
 
 
 
-- Il nécessite aucune configuration d'Xml comme Spring.
+- Il ne nécessite aucune configuration d'Xml comme Spring.
 - Scalabilité simplifiée.
 - Compatible avec le principe de «Containers» (Logiciel Docker par exemple).
 
@@ -115,7 +115,7 @@ Spring boot a été développé par l'équipe Pivotal (https://pivotal.io/).
 
 - <u><a href="/Thymeleaf/README.md">Thymeleaf</a></u>
 - <u><a href="/RestApi/README.md">Api Rest</a></u>
-- <u><a href="/JDBC/PostgreSQL/README.md">JDBC avec PostgreSQL</a></u>
+- <u><a href="/JDBC/PostgreSQL/README.md">JDBC avec PostgreSQL (Suite Api Rest)</a></u>
 
 ## <ins>**Références:**</ins>
 

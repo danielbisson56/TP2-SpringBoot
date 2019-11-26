@@ -47,7 +47,7 @@ Ce tutoriel de base pour l'application RestFul selon le modèle MVC vous prendra
 
 # Construction initiale du projet
 
-SpringBoot fonctionne avec une application web qui permet de créer un projet de base afin de démarrer avec une structure de départ. Visitez l'adresses suivante afin de créer un projet SpringBoot:
+SpringBoot fonctionne avec une application web qui permet de créer un projet de base afin de démarrer avec une structure de départ. Visitez l'adresse suivante afin de créer un projet SpringBoot:
 
  https://start.spring.io/ 
 
@@ -71,7 +71,7 @@ Appuyez maintenant sur le bouton vert «Generate - Ctrl +». L'application web v
 
 # Intégration à votre IDE
 
-Vous devrez maintenant extraire les données du .zip. Si vous avez donné votre nom à l'artifact, le dossier généré portera votre nom. Prenez maintenant le dossier généré et ouvrez le dans l'IDE de choix en tant que projet. Dans ce tutoriel, prenez par contre en compte que j'utiliserai l'IDE Eclipse.
+Vous devrez maintenant extraire les données du .zip. Si vous avez donné votre nom à l'artifact, le dossier généré portera votre nom. Prenez maintenant le dossier généré et ouvrez-le dans l'IDE de choix en tant que projet. Dans ce tutoriel, prenez par contre en compte que j'utiliserai l'IDE Éclipse.
 
 Lors de l'ouverture du projet dans votre IDE, il est possible qu'il y ait 2 choix de projets. Si c'est le cas, ouvrez celui qui est «import as: Maven». Décochez donc l'option qui ne correspond pas à ce critère.
 
@@ -83,11 +83,11 @@ L'application web de SpringBoot crée donc la structure initiale pour lancer un 
 
 <img src="images\image-20191117114738720.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-SpringBoot l'a créé automatiquement. Cette classe est la classe de démarrage du projet Spring. À partir de maintenant, nous devrions être capable de lancer le projet à partir de cette classe. Faites-le test pour être certain que tout est fonctionnel avant de commencer à éditer le projet. Vous devriez obtenir le résultat suivant en console:
+SpringBoot l'a créé automatiquement. Cette classe est la classe de démarrage du projet Spring. À partir de maintenant, nous devrions être capables de lancer le projet à partir de cette classe. Faites le test pour être certain que tout est fonctionnel avant de commencer à éditer le projet. Vous devriez obtenir le résultat suivant en console:
 
 <img src="images\image-20191117115017369.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-En lisant les logs affichés à la console, vous confirmerez que le serveur Tomcat est lancé sur le port 8080(http) et que le projet Spring est fonctionnel.
+En lisant les logs affichés à la console, vous confirmerez que le serveur Tomcat est lancé sur le port 8080 (HTTP) et que le projet Spring est fonctionnel.
 
 # Création d'un squelette de projet au format Modèle - Vue - Contrôleur
 
@@ -180,7 +180,7 @@ This annotation serves as a specialization of `@Component`, allowing for impleme
 
 ***@NotBlank:*** The annotated element must not be `null` and must contain at least one non-whitespace character. Accepts `CharSequence`.
 
-***@Valid:***Marks a property, method parameter or method return type for validation cascading.   Constraints defined on the object and its properties are be validated when the property, method parameter or method return type is validated.   This behavior is applied recursively.
+***@Valid: *** Marks a property, method parameter or method return type for validation cascading.   Constraints defined on the object and its properties are be validated when the property, method parameter or method return type is validated.   This behavior is applied recursively.
 
 ***@NonNull:*** A common Spring annotation to declare that annotated elements cannot be `null`. Should be used at parameter, return value, and field level. Method overrides should repeat parent `@NonNull` annotations unless they behave differently. 
 
@@ -228,11 +228,11 @@ Définir la méthode «addPerson» de l'API comme une méthode POST au niveau de
 
 <img src="images\image-20191117134408662.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Enfin, nous auront besoin de déterminer le chemin de la requête voulu pour notre application. L'annotation @RequestMapping("") nous permettra de définir ce paramètre dans la couche API de notre application tel que l'image ci-dessous le démonntre. Disons pour le but de ce tutoriel que le chemin d'accès voulu sera «api/v1/person».
+Enfin, nous aurons besoin de déterminer le chemin de la requête voulu pour notre application. L'annotation @RequestMapping("") nous permettra de définir ce paramètre dans la couche API de notre application tel que l'image ci-dessous le démontre. Disons pour le but de ce tutoriel que le chemin d'accès voulu sera «api/v1/person».
 
 <img src="images\image-20191117134906716.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Donc, suivant l'implémentation effectuée, une requête sur le port 8080 avec le chemin d'accès «api/v1/person» accèdera à l'API que nous venons de développée. Si cette requête est une requête POST, elle accèdera à la méthode «addPerson» ci-dessus.
+Donc, suivant l'implémentation effectuée, une requête sur le port 8080 avec le chemin d'accès «api/v1/person» accèdera à l'API que nous venons de développer. Si cette requête est une requête POST, elle accèdera à la méthode «addPerson» ci-dessus.
 
 # POSTMAN
 
@@ -240,7 +240,7 @@ Le logiciel Postman nous permettra d'utiliser un client pour interagir avec notr
 
 ### Principales fonctionnalités de POSTMAN
 
-Nous utiliserons Postman dans ce tutoriel afin de fournir un paquet JSON sur une requête POST à notre application. Voici une marche à suivre dans le logiciel Postman afin de vous permettre l'envoie d'un paquet JSON sur une requête POST à votre application:
+Nous utiliserons Postman dans ce tutoriel afin de fournir un paquet JSON sur une requête POST à notre application. Voici une marche à suivre dans le logiciel Postman afin de vous permettre l'envoi d'un paquet JSON sur une requête POST à votre application:
 
 - Créer une requête avec le l'onglet +;
 - Sélectionnez une requête POST;
@@ -257,7 +257,7 @@ Nous utiliserons Postman dans ce tutoriel afin de fournir un paquet JSON sur une
 
 <img src="images\image-20191117141007649.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-N'envoyez pas la requête immédiatement. Simplement pour bien comprendre ce qui se passe, nous venons de configurer un client qui communiquera avec notre application Web selon le modèle REST et les requêtes HTTP. Il fera une requête POST qui envoi un paquet JSON au chemin d'accès  «localhost:8080/api/v1/person ».
+N'envoyez pas la requête immédiatement. Simplement pour bien comprendre ce qui se passe, nous venons de configurer un client qui communiquera avec notre application Web selon le modèle REST et les requêtes HTTP. Il fera une requête POST qui envoie un paquet JSON au chemin d'accès «localhost:8080/api/v1/person».
 
 La réception de cette requête est configurée dans notre application en utilisant SpringBoot et ses annotations. Notre classe «PersonController.java» est un RestController qui accepte des requêtes sur le chemin d'accès «api/v1/person». La requête POST utilisera la méthode «addPerson» de notre classe «PersonController.java».
 
@@ -269,9 +269,9 @@ Notre méthode «addPerson(Person person)» de la classe «PersonController.java
 
 ### Effectuer la première requête à votre application
 
-Lancer tout d'abord votre application java. Assurez-vous que Spring est marche et que le serveur tomcat est en écoute sur le port 8080.
+Lancer tout d'abord votre application Java. Assurez-vous que Spring est marche et que le serveur Tomcat est en écoute sur le port 8080.
 
-Lancez maintenant la requête déjà défini à l'aide du bouton «Send» de Postman.
+Lancez maintenant la requête déjà définie à l'aide du bouton «Send» de Postman.
 
 <img src="images\image-20191117142354756.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -279,15 +279,15 @@ Assurez-vous de recevoir le code «Status: 200 OK» de la part de Postman.
 
 <img src="images\image-20191117142459321.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Dans la console java, des logs devraient avoir défilés si la requête a fonctionnée.
+Dans la console java, des logs devraient avoir défilé si la requête a fonctionné.
 
 <img src="images\image-20191117142601476.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Voilà! Votre 1ère requête a fonctionnée!
+Voilà! Votre 1ère requête a fonctionné !
 
 # Récupération du contenu de la base de données fictive
 
-Notre requête POST a maintenant fonctionné, mais nous ne disposons d'aucun pour savoir ce que contient notre base de données. Nous implémenterons donc le code nécessaire afin de récupérer le contenu de notre liste et de l'afficher à l'aide d'une requête GET.
+Notre requête POST a maintenant fonctionné, mais nous ne disposons d'aucuns pour savoir ce que contient notre base de données. Nous implémenterons donc le code nécessaire afin de récupérer le contenu de notre liste et de l'afficher à l'aide d'une requête GET.
 
 ### Ajout d'une méthode à notre interface
 
@@ -319,23 +319,23 @@ Effectuer maintenant une requête GET avec le logiciel POSTMAN afin de voir le c
 
 ### Requête GET
 
-Créez maintenant une nouvelle requête en utilisant le l'onglet +. Placez le même url que pour la requête POST vu précédemment. Appuyez sur le bouton SEND. Assurez-vous de recevoir le code «200 ok». Vous devriez avoir ceci dans le logiciel POSTMAN.
+Créez maintenant une nouvelle requête en utilisant le l'onglet +. Placez la même URL que pour la requête POST vue précédemment. Appuyez sur le bouton SEND. Assurez-vous de recevoir le code «200 ok». Vous devriez avoir ceci dans le logiciel POSTMAN.
 
 <img src="images\image-20191117144956950.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Votre requête a fonctionné, mais aucune entrée n'existe présentement dans la liste de la classe «PersonDataAccessImplementation.java». À l'aide de la méthode POST vu précédemment, entrez un à un quelques noms dans votre application. J'entrerai les noms de Ben Clark, Leonardo DiCaprio, Jean Lebrun et Jeanne Lablanche.
+Votre requête a fonctionné, mais aucune entrée n'existe présentement dans la liste de la classe «PersonDataAccessImplementation.java». À l'aide de la méthode POST vue précédemment, entrez un à un quelques noms dans votre application. J'entrerai les noms de Ben Clark, Leonardo DiCaprio, Jean Lebrun et Jeanne Lablanche.
 
-Après avoir effectué ces 4 requêtes POST, effectuez maintenant une requête GET, toujours à l'url  «localhost:8080/api/v1/person ». Vous devriez obtenir le résultat suivant dans POSTMAN.
+Après avoir effectué ces 4 requêtes POST, effectuez maintenant une requête GET, toujours à l'URL «localhost:8080/api/v1/person ». Vous devriez obtenir le résultat suivant dans POSTMAN.
 
 <img src="images\image-20191117145500089.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Notez que notre implémentation de la méthode POST crée un UUID automatiquement (auto-généré). On voit donc ici, pour chacune des personnes présente dans notre liste, un id et un nom, respectant le modèle définit dans la classe «Person.java» du package model.
+Notez que notre implémentation de la méthode POST crée un UUID automatiquement (autogénéré). On voit donc ici, pour chacune des personnes présentes dans notre liste, un id et un nom, respectant le modèle défini dans la classe «Person.java» du package model.
 
 Si vous utilisez le navigateur web de votre choix, vous devriez être en mesure d'obtenir un résultat identique, mais présenté de façon différente. Voici un essai en utilisant le navigateur Chrome de Google.
 
 <img src="images\image-20191117145825019.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Notre client, que ce soit POSTMAN ou un navigateur web, fait donc l'interaction avec la couche API de notre application. Celle-ci communique avec le service, qui communique avec la couche accès de données afin de retourner à travers la couche service à l'API les informations demandés, le tout respectant le modèle MVC présenté en début de tutoriel.
+Notre client, que ce soit POSTMAN ou un navigateur web, fait donc l'interaction avec la couche API de notre application. Celle-ci communique avec le service, qui communique avec la couche accès de données afin de retourner à travers la couche service à l'API les informations demandées, le tout respectant le modèle MVC présenté en début de tutoriel.
 
 # Implémentation RestFul des méthodes HTTP
 
@@ -361,25 +361,25 @@ Nous ajoutons ici 3 méthodes. Voyons comment SpringBoot nous simplifie la vie d
 
 Tout d'abord, nous ajoutons une méthode «getPersonById», qui est elle aussi est un @GetMapping. Elle permettra, selon une requête GET qui fournit un ID, de retourner la personne avec l'id qui correspond à la requête. L'annotation @PathVariavle est expliquée dans le paragraphe qui suit.
 
-Nous implémentons également une méthode «deletePersonById» selon l'annotation @DeleteMapping, qui fonctionnement comme les autres annotations HTTP de SpringBoot. Notez le chemin fournit dans l'annotation et le @PathVariable inclut à côté du paramètre UUID. Comme vous vous en doutez peut-être, ceci nous permet de prendre le paramètre fournit dans l'url de la requête et de lui donner le nom «id» (@DeleteMapping(path = "{id}")). Ensuite, l'annotation «@PathVariable("id")» fournit cet information interprétée comme le champ ayant le nom «id» et l'insère dans le paramètre UUID de la méthode. SpringBoot permet donc la conversion rapide d'informations présentent dans la requête url en paramètre des méthodes de notre API REST.
+Nous implémentons également une méthode «deletePersonById» selon l'annotation @DeleteMapping, qui fonctionnement comme les autres annotations HTTP de SpringBoot. Notez le chemin fourni dans l'annotation et le @PathVariable inclut à côté du paramètre UUID. Comme vous vous en doutez peut-être, ceci nous permet de prendre le paramètre fourni dans l'URL de la requête et de lui donner le nom «id» (@DeleteMapping(path = "{id}")). Ensuite, l'annotation «@PathVariable("id")» fournit cet information interprétée comme le champ ayant le nom «id» et l'insère dans le paramètre UUID de la méthode. SpringBoot permet donc la conversion rapide d'informations présentent dans la requête URL en paramètre des méthodes de notre API REST.
 
 # Vérification avec POSTMAN
 
-Arrêtez tout processus Spring démarrés précédemment. Redémarrez un nouveau processus Spring à partir de votre application java. 
+Arrêtez tout processus Spring démarré précédemment. Redémarrez un nouveau processus Spring à partir de votre application java. 
 
-À l'aide de Postman, insérez quelques noms dans la liste de base de donnée fictive. J'insérerai les même noms que dans l'exemple précédent.
+À l'aide de Postman, insérez quelques noms dans la liste de base de données fictive. J'insérerai les mêmes noms que dans l'exemple précédent.
 
-Faites maintenant une requête GET afin de ressortir les informations enregistrés dans votre application. Voici mes résultats.
+Faites maintenant une requête GET afin de ressortir les informations enregistrées dans votre application. Voici mes résultats.
 
 <img src="images\image-20191117152719928.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Nous allons maintenant créer une requête DELETE avec l'id de la personne que nous voulons supprimer. Je choisirai Ben Clark. Nous devrons placer l'id dans l'url de la requête après le champ «person». Voici donc ma requête.
+Nous allons maintenant créer une requête DELETE avec l'id de la personne que nous voulons supprimer. Je choisirai Ben Clark. Nous devrons placer l'id dans l'URL de la requête après le champ «person». Voici donc ma requête.
 
 <img src="images\image-20191117152959895.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 Appuyez sur le bouton SEND et assurez-vous de recevoir le code «200 ok».
 
-Effectuez maintenant une nouvelle requête GET afin de voir si la personne a été supprimé.
+Effectuez maintenant une nouvelle requête GET afin de voir si la personne a été supprimée.
 
 <img src="images\image-20191117153125031.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -401,7 +401,7 @@ Le tout fonctionne à merveille et complète l'implémentation complète de notr
 
 # Implémentation de certaines validations
 
-Nous pouvons également, à l'aide de SpringBoot, s'assurer que certains champs ne seront pas nulles lors de l'insertion ou de la modification de données. Nous utiliserons alors les annotations @NotBlank, @Valid et @NonNull afin d'effectuer ces validations. Le tout permettra de refuser l'insertion nulle lors d'une requête POST, par exemple.
+Nous pouvons également, à l'aide de SpringBoot, nous assurer que certains champs ne seront pas nuls lors de l'insertion ou de la modification de données. Nous utiliserons alors les annotations @NotBlank, @Valid et @NonNull afin d'effectuer ces validations. Le tout permettra de refuser l'insertion nulle lors d'une requête POST, par exemple.
 
 ### Person.java
 
@@ -415,23 +415,23 @@ Remarquez ici les méthodes «addPerson» et «updatePersonById».
 
 ## Test
 
-Arrêtez tout processus Spring démarrés précédemment. Redémarrez un nouveau processus Spring à partir de votre application java. 
+Arrêtez tout processus Spring démarré précédemment. Redémarrez un nouveau processus Spring à partir de votre application java. 
 
 Effectuez maintenant un test avec une requête POST qui contiendrait paquet JSON qui comporte un élément comme suit: «"name": ""». Vous devriez alors obtenir le message d'erreur suivant dans le logiciel POSTMAN.
 
 <img src="images\image-20191117155115055.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-On vous mentionne entre autre un code d'erreur 400 et : "default message": "ne peut pas être vide". On voit donc qu'il a eu une validation pour s'assurer que le champ nom contient des données lors de l'insertion sur une requête POST.
+On vous mentionne entre autres un code d'erreur 400 et : "default message": "ne peut pas être vide". On voit donc qu'il a eu une validation pour s'assurer que le champ nom contient des données lors de l'insertion sur une requête POST.
 
 # Injection de dépendances avec SpringBoot
 
-Nous avons discutés précédemment qu'il serait possible d'avoir plusieurs implémentations de notre interface dans notre application. SpringBoot permet de faciliter l'utilisation des interfaces voulues avec l'injection de dépendances. Créons une 2e implémentation de notre interface dans le package «dataAccess» et nommons la «PersonDataAccessNouvelleImplementation.java». Cette classe implémente bien sûr l'interface «PersonDataAccessInterface.java».
+Nous avons discuté précédemment qu'il serait possible d'avoir plusieurs implémentations de notre interface dans notre application. SpringBoot permet de faciliter l'utilisation des interfaces voulues avec l'injection de dépendances. Créons une 2e implémentation de notre interface dans le package «dataAccess» et nommons la «PersonDataAccessNouvelleImplementation.java». Cette classe implémente bien sûr l'interface «PersonDataAccessInterface.java».
 
-Notre nouvelle implémentation sera elle aussi définit comme un @Repository, mais nous lui fourniront le paramètre "nouvelleImplementation" au lieu de "implementationVoulu". Nous implémenterons simplement la méthode «selectAllPeople» pour le but de la démonstration. Voici donc la définition de la nouvelle implémentation.
+Notre nouvelle implémentation sera elle aussi définie comme un @Repository, mais nous lui fournirons le paramètre "nouvelleImplementation" au lieu de "implementationVoulu". Nous implémenterons simplement la méthode «selectAllPeople» pour le but de la démonstration. Voici donc la définition de la nouvelle implémentation.
 
 <img src="images\image-20191117160124693.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-La méthode «selectAllPeople» crée donc une seule personne et lui donne le nom «Ceci est ma nouvelle implémentation et ça fonctionne!». En faisant une requête GET sur cette implémentation, nous devrions donc recevoir une personne avec le nom comme nous l'avons définit dans cet interface.
+La méthode «selectAllPeople» crée donc une seule personne et lui donne le nom «Ceci est ma nouvelle implémentation et ça fonctionne!». En faisant une requête GET sur cette implémentation, nous devrions donc recevoir une personne avec le nom comme nous l'avons définie dans cette interface.
 
 Pour dire à Spring de faire l'injection de dépendances et modifier notre application, nous avons simplement à aller dans notre classe «PersonService.java» et à modifier l'annotation @Qualifier avec le nom de notre repository comme suit.
 
@@ -439,9 +439,9 @@ Pour dire à Spring de faire l'injection de dépendances et modifier notre appli
 
 ### Test
 
-Sauvegardez toute modification à votre code d'application java. Arrêtez tout processus Spring démarrés précédemment. Redémarrez un nouveau processus Spring à partir de votre application java. 
+Sauvegardez toute modification à votre code d'application java. Arrêtez tout processus Spring démarré précédemment. Redémarrez un nouveau processus Spring à partir de votre application java. 
 
-Faites maintenant une requête GET avec POSTMAN à l'url «localhost:8080/api/v1/person ». Essayez également à partir de votre navigateur web. Vous serez en mesure de confirmer que votre nouvelle interface est maintenant utilisée lors d'une requête GET sans paramètre en entrée. Voici mes résultats avec POSTMAN et navigateur Chrome.
+Faites maintenant une requête GET avec POSTMAN à l'URL «localhost:8080/api/v1/person ». Essayez également à partir de votre navigateur web. Vous serez en mesure de confirmer que votre nouvelle interface est maintenant utilisée lors d'une requête GET sans paramètre en entrée. Voici mes résultats avec POSTMAN et le navigateur Chrome.
 
 <img src="images\image-20191117160815719.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -449,7 +449,7 @@ Faites maintenant une requête GET avec POSTMAN à l'url «localhost:8080/api/v1
 
 # Pour aller un peu plus loin (tutoriel avancé)
 
-Implémentation de base de donnée PostgreSQL en utilisant Docker, flyway et SpringBoot JDBC.
+Implémentation de base de données PostgreSQL en utilisant Docker, flyway et SpringBoot JDBC.
 
 # Dépannage (Troubleshooting)
 

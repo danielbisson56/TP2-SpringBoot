@@ -12,7 +12,7 @@ Thymeleaf est un Template Java XML/ XHTML/ HTML5  qui permet de travailler sur u
 
 ### **<ins>Java :</ins>**
 
-On doit télécharger et installer java 8 pour Windows X32 ou X64.
+On doit télécharger et installer Java 8 pour Windows X32 ou X64.
 
 <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Télécharger java 8u231 </a>
 
@@ -198,7 +198,7 @@ public class HomeController {
 
 ### **<ins>Erreurs possibles :</ins>**
 
-Il ne faut pas nommé le nom de votre classe Controller parce que cela interfère avec le tag @Controller.
+Il ne faut pas nommer le nom de votre classe Controller parce que cela interfère avec le tag @Controller.
 
 **<ins>User.java</ins>**
 
@@ -228,7 +228,7 @@ public class User {
 }
 ```
 
-8- Fichier finale avant l'exécution du programme.
+8- Fichier final avant l'exécution du programme.
 
 <img style="float: left;" src="../Image/InstallUseSpringTool4/12_5.JPG">
 
@@ -240,7 +240,7 @@ Affichage de l'exécution de Spring dans la console.
 
 <img style="float: left;" src="../Image/InstallUseSpringTool4/15.JPG">
 
-10- Ouvrir votre browser préféré et entrer localhost:8080.
+10- Ouvrir votre navigateur préféré et entrer localhost:8080.
 
 <img style="float: left;" src="../Image/InstallUseSpringTool4/15_5.JPG">
 

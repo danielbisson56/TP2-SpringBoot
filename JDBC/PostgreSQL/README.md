@@ -10,7 +10,7 @@
 8. Création d'une source de données
 9. Utilisation de Flyway
 10. Interaction en invite de commande avec le contenant dans Docker
-11. Démarrage de l'application java
+11. Démarrage de l'application Java
 12. Génération d'entrées dans la table «person»
 13. Implémentation de notre couche d'accès aux données
 14. Démonstration finale
@@ -20,9 +20,9 @@
 
 # Introduction
 
-Cette portion avancée du tutoriel vous permettra de compléter l'implémentation du modèle proposé avec une base de données PostgreSQL en utilisant le logiciel Docker et les dépendances de flyway et de java JDBC en utilisant SpringBoot.
+Cette portion avancée du tutoriel vous permettra de compléter l'implémentation du modèle proposé avec une base de données PostgreSQL en utilisant le logiciel Docker et les dépendances de flyway et de Java JDBC en utilisant SpringBoot.
 
-Pour toute information concernant les fonctionalités SpringBoot, référez-vous à la section «Quelques fonctionnalités de SpringBoot», pour en avoir la définition.
+Pour toute information concernant les fonctionnalités SpringBoot, référez-vous à la section «Quelques fonctionnalités de SpringBoot», pour en avoir la définition.
 
 Cette portion du tutoriel devrait vous prendre environ 45 minutes à apprendre et à implémenter.
 
@@ -39,7 +39,7 @@ Encore une fois, je vous souhaite un bon apprentissage!
 
 # Situation Logicielle Initiale
 
-Pour l'implémentation de ce tutoriel avancé, je prend pour acquis que votre application est maintenant pleinement implémenté et fonctionnelle selon le tutoriel SpringBoot «Rest API». Votre application est donc une application web, RestFul qui respecte le modèle MVC. Elle respecte donc le schémas suivant:
+Pour l'implémentation de ce tutoriel avancé, je tiens pour acquis que votre application est maintenant pleinement implémentée et fonctionnelle selon le tutoriel SpringBoot «Rest API». Votre application est donc une application web, RestFul qui respecte le modèle MVC. Elle respecte donc le schéma suivant:
 
 <img src="images\image-20191120132524670.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -47,7 +47,7 @@ Vous avez une couche API qui est accessible par un client web de votre choix. Vo
 
 # Application complète proposée
 
-Le schémas suivant illustre la solution finale proposée pour l'application.
+Le schéma suivant illustre la solution finale proposée pour l'application.
 
 <img src="images\image-20191120132430562.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -65,7 +65,7 @@ Ouvrez une fenêtre de commande sur votre ordinateur. Entrez la commande suivant
 
 *docker run --name tp2postgresdb -e POSTGRES_PASSWORD=monmotdepasse -d -p 5432:5432 postgres:alpine*
 
-Ceci donnera la commande à Docker de créer votre instance de base de donnée PostgreSQL avec les attributs suivant:
+Ceci donnera la commande à Docker de créer votre instance de base de donnée PostgreSQL avec les attributs suivants :
 
 Nom: tp2postgresdb
 
@@ -75,9 +75,9 @@ Port d'utilisation: 5432 (par défaut pour Postgres)
 
 -d : veut dire «detach mode»
 
-Mode d'utilisation: alpine (version légère de la base de donnée)
+Mode d'utilisation: alpine (version légère de la base de données)
 
-Pour montrer le contenant de la base de donnée, tapez la commande «docker ps». Pour montrer le port qu'utilise votre base de données, tapez la commande «docker port tp2postgresdb».
+Pour montrer le contenant de la base de données, tapez la commande «docker ps». Pour montrer le port qu'utilise votre base de données, tapez la commande «docker port tp2postgresdb».
 
 Si le tout fonctionne bien, vous obtiendrez le résultat suivant:
 
@@ -119,7 +119,7 @@ Ajoutez maintenant un package dans «%votreApplication%/src/main/java» et nomme
 
 ### PostgresDataSource.java
 
-La classe «PostgresDataSource.java» sera utilisée afin d'effectuer des configurations.  Elle prendra donc l'annotation @Configuration, qui détermine également qu'une de ses méthodes sera instanciée comme un «Bean». On l'instanciera d'ailleurs comme un «Bean» avec l'annotation @Bean. Notez également l'annotation «@ConfigurationProperties("app.datasource")» qui fait référence à notre fichier de connexion «application.yml», où «app.datasource» est définit. La classe sera donc sera implémentée comme suit.
+La classe «PostgresDataSource.java» sera utilisée afin d'effectuer des configurations.  Elle prendra donc l'annotation @Configuration, qui détermine également qu'une de ses méthodes sera instanciée comme un «Bean». On l'instanciera d'ailleurs comme un «Bean» avec l'annotation @Bean. Notez également l'annotation «@ConfigurationProperties("app.datasource")» qui fait référence à notre fichier de connexion «application.yml», où «app.datasource» est défini. La classe sera donc sera implémentée comme suit.
 
 <img src="images\image-20191120142135650.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -161,7 +161,7 @@ Pour afficher la liste des bases de données dans votre contenant, tapez «\l».
 
 ### Création d'une base de données
 
-Nous allons maintenant créer une nouvelle base de données. Puisque vous êtes dans votre contenant, vous pouvez maintenant exécuter des commandes SQL. Tapes la commande SQL suivante:
+Nous allons maintenant créer une nouvelle base de données. Puisque vous êtes dans votre contenant, vous pouvez maintenant exécuter des commandes SQL. Tape la commande SQL suivante:
 
 *CREATE DATABASE tp2database;*
 
@@ -177,19 +177,19 @@ Tapez la commande «*\c tp2database*». Vous vous connecterez alors à la base d
 
 <img src="images\image-20191120182738042.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Avec les commandes «*\d*» et «*\dt*», vous serez en mesure de confirmer que votre base de données est vide de tout éléments (\d) et qu'elle ne possède présentement aucune table (\dt).
+Avec les commandes «*\d*» et «*\dt*», vous serez en mesure de confirmer que votre base de données est vide de tout élément (\d) et qu'elle ne possède présentement aucune table (\dt).
 
 <img src="images\image-20191120183019832.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-# Démarrage de l'application java
+# Démarrage de l'application Java
 
-Nous allons maintenant démarrer notre application java. Vous pouvez laisser l'invite de commande ouvert pour l'instant, nous y reviendrons plus tard.
+Nous allons maintenant démarrer notre application Java. Vous pouvez laisser l'invite de commande ouverte pour l'instant, nous y reviendrons plus tard.
 
 Assurez-vous donc qu'aucun autre processus n'est en cours d'exécution pour l'application présente. Démarrez votre application. Vous devriez obtenir le résultat suivant dans l'affichage de la console.
 
 <img src="images\image-20191120183827715.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-On verra des logs pour nous mentionner entre autre les choses suivantes:
+On verra des logs pour nous mentionner entre autres les choses suivantes:
 
 1. HikariPool-1 - Start completed;
 2. Database: jdbc:postgresql://localhost:5432/tp2database (PostgreSQL 12.0);
@@ -197,15 +197,15 @@ On verra des logs pour nous mentionner entre autre les choses suivantes:
 4. Tomcat started on port(s): 8080 (http) with context path '';
 5. Started DanielBissonApplication in 4.146 seconds (JVM running for 4.719);
 
-Le tout confirme que le hikaripool est fonctionnel, que la base de données jdbc est à localhost au port 5432, que la migration a fonctionné (version 1 - PersonTable), que le serveur tomcat est en écoute au port 8080 et que l'application a bien démarrée.
+Le tout confirme que le hikaripool est fonctionnel, que la base de données jdbc est à localhost au port 5432, que la migration a fonctionné (version 1 - PersonTable), que le serveur Tomcat est en écoute au port 8080 et que l'application a bien démarré.
 
 Précédemment, nous avons créé le fichier «V1__PersonTable.sql». Ce fichier commandait la création d'une table person. Allons maintenant voir si le tout a fonctionné. Retournons en invite de commande.
 
-Tapez la commande «\d». Vous observerez alors que la base de donnée comporte 2 tables. Une pour «flyway», que nous n'allons pas utiliser et une autre qui porte le nom de «person».
+Tapez la commande «\d». Vous observerez alors que la base de données comporte 2 tables. Une pour «flyway», que nous n'allons pas utiliser et une autre qui porte le nom de «person».
 
 <img src="images\image-20191120184834063.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Tapez la commande «\d person» afin de décrire la table «person». Vous obtiendrez alors les attributs de la table en question, tels que nous l'avons décrit dans notre application java.
+Tapez la commande «\d person» afin de décrire la table «person». Vous obtiendrez alors les attributs de la table en question, tels que nous l'avons décrit dans notre application Java.
 
 <img src="images\image-20191120185013864.png" alt="image-20191117114342901" style="zoom:150%;" />
 
@@ -239,7 +239,7 @@ Insérez donc quelques personnes de votre choix. Vous devriez être capable d'ob
 
 # Implémentation de notre couche d'accès aux données
 
-Nous avons maintenant une base de données et quelques personnes présentent dans notre table «person». Nous aurons maintenant besoin d'implémenter le code java nécessaire pour accéder à notre base de données, depuis notre couche d'accès aux données. Fermez tout d'abord le processus Spring en cours d'exécution.
+Nous avons maintenant une base de données et quelques personnes présentent dans notre table «person». Nous aurons maintenant besoin d'implémenter le code Java nécessaire pour accéder à notre base de données, depuis notre couche d'accès aux données. Fermez tout d'abord le processus Spring en cours d'exécution.
 
 Ouvrez la classe «PersonDataAccessNouvelleImplementation.java».
 
@@ -256,7 +256,7 @@ Puisque le but de ce tutoriel est d'apprendre les fonctionnalités de SpringBoot
 Les points importants seront les suivants:
 
 1. Assurez-vous de faire le bon «import» pour la classe JDBCTemplate ( org.springframework.jdbc.core.JdbcTemplate;);
-2. Noubliez pas que le service fait le lien avec l'implémentation de l'interface via @Qualifier("nouvelleImplementation") et que le tout est relié à l'annotation @Repository("nouvelleImplementation") de votre classe PersonDataAccessNouvelleImplementation.java;
+2. N'oubliez pas que le service fait le lien avec l'implémentation de l'interface via @Qualifier("nouvelleImplementation") et que le tout est relié à l'annotation @Repository("nouvelleImplementation") de votre classe PersonDataAccessNouvelleImplementation.java;
 3. Le constructeur sera @Autowired (injection de dépendances);
 4. Nous implémenterons seulement les méthodes selectAllPeople() et selectPersonById() pour le but de la démonstration.
 
@@ -264,7 +264,7 @@ Les points importants seront les suivants:
 
 Sauvegardez vos changements et redémarrez maintenant votre application Spring.
 
-Nous avons donc un serveur tomcat en écoute de clients sur le port 8080. Notre application comporte trois couches (API, SERVICE, DATA ACCESS) et est connectée à une base de données PostgreSQL sur le port 5432. Nous avons une base de données nommée «tp2database» qui comporte la table «person» qui comporte maintenant quelques entrées.
+Nous avons donc un serveur Tomcat en écoute de clients sur le port 8080. Notre application comporte trois couches (API, SERVICE, DATA ACCESS) et est connectée à une base de données PostgreSQL sur le port 5432. Nous avons une base de données nommée «tp2database» qui comporte la table «person» qui comporte maintenant quelques entrées.
 
 Avec le navigateur web de votre choix, faites maintenant la requête suivante afin de voir toutes les entrées de la table «person».
 
@@ -292,9 +292,9 @@ Pour conclure, SpringBoot offre une vaste gamme d'options de création d'applica
 
 Il utilise des annotations afin de créer automatiquement des liens qui facilitent l'implémentation lors de la création d'une application.
 
-Il permet entre autre, comme présenté dans ce tutoriel, de créer une application web Restful selon le modèle MVC avec une base de données fonctionnelle en moins de 2 heures.
+Il permet entre autres, comme présenté dans ce tutoriel, de créer une application web Restful selon le modèle MVC avec une base de données fonctionnelle en moins de 2 heures.
 
-Ceci termine la présentation des fonctionnalités pour le but du tutoriel SpringBoot. En espérant que le tout vous aura plut et que vous aurez apprécié en apprendre ce que SpringBoot a à offrir au monde de l'informatique.
+Ceci termine la présentation des fonctionnalités pour le but du tutoriel SpringBoot. En espérant que le tout vous aura plu et que vous aurez apprécié en apprendre ce que SpringBoot a à offrir au monde de l'informatique.
 
 # Fonctionnalités de Springboot utilisés dans ce tutoriel
 
@@ -310,7 +310,7 @@ Ceci termine la présentation des fonctionnalités pour le but du tutoriel Sprin
 
 ### **Commandes SQL**
 
-N'oubliez pas le «;» à la fin de chaque commandes. De plus, lors de la création d'une entrée avec la commande 
+N'oubliez pas le «;» à la fin de chaque commande. De plus, lors de la création d'une entrée avec la commande 
 
 *INSERT INTO person (id, name) VALUES (uuid_generate_v4(), 'Nom Voulu');*
 
