@@ -1,7 +1,5 @@
 <img src="./Image/SpringBoot/spring-boot.png" style="float: left;"  height="70%" width="70%">
 
-------
-
 ## <ins>**Description :**</ins>
 
 Selon la description de «Tutorialspoint» (https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm), SpringBoot est un logiciel ouvert basé sur le language de programmation Java. C'est une couche d'abstraction qui opère au-dessus du «framework» Spring. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants. 
@@ -9,8 +7,6 @@ Selon la description de «Tutorialspoint» (https://www.tutorialspoint.com/sprin
 SpringBoot permet entre autre la création d'applications Spring qui sont des micro-services indépendants prêt au déploiement de façon rapide, en facilitant la configuration nécessaire pour l'utilisation de Spring.
 
 Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
-
-------
 
 ## <ins>Ses avantages</ins> :
 
@@ -49,8 +45,6 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 - SpringBoot inclut parfois des dépendances qui ne seront pas utilisées, produisant une application plus volumineuse que ce qui est requis.
 - Quoique bien conçu pour le développement initial d'application Spring, il sera difficile de convertir une application Spring en application SpringBoot par la suite.
 
-------
-
 ## <ins>Évolution de Spring et Spring boot :</ins>
 
 | <u>Ligne de temps</u> |                        |
@@ -88,8 +82,6 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 
 
 
-------
-
 ## <ins>**Options :**</ins>
 
 <u><img src="./Image/SpringBootDependency/0.JPG" style = "float: left;"  height="20%" width="20%"  > <img src="./Image/SpringBootDependency/1.JPG" style = "float: left;"  height="17%" width="17%"  ></u>
@@ -124,8 +116,6 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 - <u><a href="/Thymeleaf/README.md">Thymeleaf</a></u>
 - <u><a href="/RestApi/README.md">Api Rest</a></u>
 - <u><a href="/JDBC/PostgreSQL/README.md">JDBC avec PostgreSQL</a></u>
-
-------
 
 ## <ins>**Références:**</ins>
 
