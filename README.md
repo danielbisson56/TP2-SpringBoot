@@ -1,8 +1,8 @@
 <img src="./Image/SpringBoot/spring-boot.png" style="float: left;"  height="70%" width="70%">
-<br><br><br><br><br>
+
 ------
 
-## <ins>**Description :**</ins> 
+## <ins>**Description :**</ins>
 
 Selon la description de «Tutorialspoint» (https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm), SpringBoot est un logiciel ouvert basé sur le language de programmation Java. C'est une couche d'abstraction qui opère au-dessus du «framework» Spring. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants. 
 
