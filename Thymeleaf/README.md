@@ -2,13 +2,11 @@
 
 <img style="float: left;" src="../Image/Thymeleaf/ThymeleafIcon.jpg">
 
-------
+
 
 ## **<ins>Description:</ins>**
 
 Thymeleaf est un Template Java XML/ XHTML/ HTML5  qui permet de travailler sur un environnement web. Il est utilisé comme la couche vue des applications basées sur le patron de conception MVC . 
-
-------
 
 ## **<ins>Préroquis :</ins>**
 
@@ -47,8 +45,6 @@ Il faut télécharger et installer l'ide Spring Tools 4 for Eclipse permettant d
 4- Voici l'ide complet pour Spring boot.
 
 <img style="float: left;" src="../Image/InstallUseSpringTool4/4.JPG">
-
-------
 
 ## **<ins>Création d'une application utilisant Thymeleaf :</ins>**
 
