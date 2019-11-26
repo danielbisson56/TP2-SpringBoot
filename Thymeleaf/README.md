@@ -78,7 +78,7 @@ On obtient le résultat ci-dessous.
 ```
 5- On update notre projet avec Maven.
 
-<img style="float: left;" src="../Image/InstallUseSpringTool4/11.JPG">
+<img style="float: left;" src="../Image/InstallUseSpringTool4/11.jpg">
 
 <img style="float: left;" src="../Image/InstallUseSpringTool4/12.JPG">
 
