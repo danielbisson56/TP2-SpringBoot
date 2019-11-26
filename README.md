@@ -45,8 +45,8 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 
 ## <ins>Ses inconvénients :</ins>
 
-- Les configurations automatiques de SpringBoot peuvent ne pas combler les besoins spécifiques d'un projet de développement d'application;
-- SpringBoot inclut parfois des dépendances qui ne seront pas utilisés, produisant une application plus volumineuse que ce qui est requis;
+- Les configurations automatiques de SpringBoot ne peuvent pas combler les besoins spécifiques d'un projet de développement d'application.
+- SpringBoot inclut parfois des dépendances qui ne seront pas utilisées, produisant une application plus volumineuse que ce qui est requis.
 - Quoique bien conçu pour le développement initial d'application Spring, il sera difficile de convertir une application Spring en application SpringBoot par la suite.
 
 ------
@@ -67,8 +67,6 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 | 5 (2017)              | 2.2 (2019)             |
 | 5.1 (2018)            |                        |
 | 5.2 (2019)            |                        |
-
-------
 
 ## <ins>**Architecture :**</ins>
 
@@ -126,7 +124,6 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 - <u><a href="/Thymeleaf/README.md">Thymeleaf</a></u>
 - <u><a href="/RestApi/README.md">Api Rest</a></u>
 - <u><a href="/JDBC/PostgreSQL/README.md">JDBC avec PostgreSQL</a></u>
-- <u><a href="/JDBC/MySQL/README.md">JDBC avec MySQL</a></u>
 
 ------
 
