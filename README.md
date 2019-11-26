@@ -1,7 +1,5 @@
 <img src="./Image/SpringBoot/spring-boot.png" style="float: left;"  height="70%" width="70%">
 
-<!-- TOC -->autoauto- [<ins>**Description :**</ins>](#insdescription-ins)auto- [<ins>Ses avantages</ins> :](#insses-avantagesins-)auto- [<ins>Ses inconvénients :</ins>](#insses-inconvénients-ins)auto- [<ins>Évolution de Spring et Spring boot :</ins>](#insévolution-de-spring-et-spring-boot-ins)auto- [<ins>**Architecture :**</ins>](#insarchitecture-ins)auto- [<ins>**Options :**</ins>](#insoptions-ins)auto    - [<ins>**Options spécifiques:**</ins>](#insoptions-spécifiquesins)auto- [<ins>Tutoriel d'utilisation de Spring Boot :</ins>](#instutoriel-dutilisation-de-spring-boot-ins)auto- [<ins>**Références:**</ins>](#insréférencesins)autoauto<!-- /TOC -->
-
 ## <ins>**Description :**</ins>
 
 Selon la description de «Tutorialspoint» (https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm), SpringBoot est un logiciel ouvert basé sur le langage de programmation Java. C'est une couche d'abstraction qui opère au-dessus du «framework» Spring. Il permet de créer des micro services qui sont en fait un développement et un déploiement de services indépendants. 
