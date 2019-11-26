@@ -12,15 +12,16 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 
 ------
 
-## **<ins>Pourquoi Choisir Spring boot :</ins>**
+## <ins>Ses avantages</ins> :
 
-- Spring boot accélère et facilite la création d'applications nécessitant le Framework Spring.
+- Déploiement facile d'applications.
+- Accélère et facilite la création d'applications nécessitant le Framework Spring.
 
 <img src="./Image/Spring/spring-by-pivotal.png" style = "float: left;"  height="25%" width="25%"  >
 
-- Il a été développé selon le principe <u>R</u>apid <u>A</u>pplication <u>D</u>éveloppement. RAD permet d'être flexible aux changements et est destiné au projet devant être livré tôt (2-3 mois) . Il permet de découper un gros projet en petits et il focus sur la réutilisation de Template, d'outils, de processus et de code.
+- Il a été développé selon le principe <u>R</u>apid <u>A</u>pplication <u>D</u>éveloppement. RAD permet d'être flexible aux changements et est destiné au projet devant être livré tôt (2-3 mois) . Il permet de découper un gros projet en petits et il focus sur la réutilisation de Template, d'outils, de processus et de code. Cela permet donc de réduire le temps de production de logiciels.
 
-<img src="./Image/RAD/RAD-Model.png" style = "float: middle;"  height="50%" width="50%"  >
+<img src="./Image/RAD/RAD-Model.png" style = "float: left"  height="50%" width="50%"  >
 
 - Il intègre les serveurs web Tomcat, Jetty et Undertow
 
@@ -39,23 +40,14 @@ Spring boot a été dévelloppé par l'équipe Pivotal (https://pivotal.io/).
 
 
 - Il nécessite aucune configuration d'Xml comme Spring.
+- Scalabilité simplifiée.
+- Compatible avec le principe de «Containers» (Logiciel Docker par exemple).
 
-## Ses avantages
+## <ins>Ses inconvénients :</ins>
 
-1. Déploiement d'application facile;
-2. Facilité à comprendre le «framework» Spring et facilité à développer une application Spring;
-3. Scalabilité simplifiée;
-4. Compatible avec le principe de «Containers» (Logiciel Docker par exemple);
-5. Configuration de Spring simplifiée;
-6. Temps de production d'application réduit.
-
-## Ses inconvénients
-
-1. Les configurations automatiques de SpringBoot peuvent ne pas combler les besoins spécifiques d'un projet de développement d'application;
-2. SpringBoot inclut parfois des dépendances qui ne seront pas utilisés, produisant une application plus volumineuse que ce qui est requis;
-3. Quoique bien conçu pour le développement initial d'application Spring, il sera difficile de convertir une application Spring en application SpringBoot par la suite.
-
-
+- Les configurations automatiques de SpringBoot peuvent ne pas combler les besoins spécifiques d'un projet de développement d'application;
+- SpringBoot inclut parfois des dépendances qui ne seront pas utilisés, produisant une application plus volumineuse que ce qui est requis;
+- Quoique bien conçu pour le développement initial d'application Spring, il sera difficile de convertir une application Spring en application SpringBoot par la suite.
 
 ------
 
