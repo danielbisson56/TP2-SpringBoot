@@ -1,6 +1,0 @@
-app:
-   datasource:
-      jdbc-url: jdbc:postgresql://localhost:5432/tp2database
-      username: postgres
-      password: monmotdepasse
-      pool-size: 30
