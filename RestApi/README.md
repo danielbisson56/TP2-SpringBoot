@@ -71,7 +71,7 @@ Appuyez maintenant sur le bouton vert «Generate - Ctrl +». L'application web v
 
 # Intégration à votre IDE
 
-Vous devrez maintenant extraire les données du .zip. Si vous avez donné votre nom à l'artifact, le dossier généré portera votre nom. Prenez maintenant le dossier généré et ouvrez-le dans l'IDE de choix en tant que projet. Dans ce tutoriel, prenez par contre en compte que j'utiliserai l'IDE Éclipse.
+Vous devrez maintenant extraire les données du .zip. Si vous avez donné votre nom à l'artifact, le dossier généré portera votre nom. Prenez maintenant le dossier généré et ouvrez-le dans l'IDE de votre choix en tant que projet. Dans ce tutoriel, prenez par contre en compte que j'utiliserai l'IDE Éclipse.
 
 Lors de l'ouverture du projet dans votre IDE, il est possible qu'il y ait 2 choix de projets. Si c'est le cas, ouvrez celui qui est «import as: Maven». Décochez donc l'option qui ne correspond pas à ce critère.
 
