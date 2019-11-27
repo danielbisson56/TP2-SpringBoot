@@ -124,7 +124,7 @@ Créez maintenant les classes et l'interface suivante(s) afin de représenter la
 
 <img src="images\image-20191117121250458.png" alt="image-20191117114342901" style="zoom:150%;" />
 
-Créez maintenant l'implémentation de base des classes selon les images ci-dessous. Je vous rappelle que nous ne faisons pour l'instant que définir la structure du projet, sans utiliser les fonctionnalités de SpringBoot. Nous y viendrons par la suite. Assurez-vous simplement de suivre l'implémentation proposée pour l'instant et d'importer les classes nécessaires au bon fonctionnement du code.
+Créez maintenant l'implémentation de base des classes selon les images ci-dessous. Je vous rappelle que nous ne faisons pour l'instant que définir la structure du projet, sans utiliser les fonctionnalités de SpringBoot. Nous y viendrons par la suite. Assurez-vous simplement de suivre l'implémentation proposée pour l'instant et d'importer les classes et les librairies nécessaires au bon fonctionnement du code.
 
 ### Le modèle: Person.java
 
