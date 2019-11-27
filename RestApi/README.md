@@ -158,7 +158,7 @@ May also indicate that a class is a "Business Service Facade" (in the Core J2EE 
 
 This annotation serves as a specialization of `@Component`, allowing for implementation classes to be autodetected through classpath scanning.
 
-**@*Autowired*: **Marks a constructor, field, setter method, or config method as to be autowired by Spring's dependency injection facilities
+***@Autowired:*** Marks a constructor, field, setter method, or config method as to be autowired by Spring's dependency injection facilities
 
 **@*Qualifier*:** This annotation may be used on a field or parameter as a qualifier for candidate beans when autowiring. It may also be used to annotate other custom annotations that can then in turn be used as qualifiers.
 
@@ -180,7 +180,7 @@ This annotation serves as a specialization of `@Component`, allowing for impleme
 
 ***@NotBlank:*** The annotated element must not be `null` and must contain at least one non-whitespace character. Accepts `CharSequence`.
 
-***@Valid: *** Marks a property, method parameter or method return type for validation cascading.   Constraints defined on the object and its properties are be validated when the property, method parameter or method return type is validated.   This behavior is applied recursively.
+***@Valid:*** Marks a property, method parameter or method return type for validation cascading.   Constraints defined on the object and its properties are be validated when the property, method parameter or method return type is validated.   This behavior is applied recursively.
 
 ***@NonNull:*** A common Spring annotation to declare that annotated elements cannot be `null`. Should be used at parameter, return value, and field level. Method overrides should repeat parent `@NonNull` annotations unless they behave differently. 
 
