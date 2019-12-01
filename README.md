@@ -111,36 +111,40 @@ Spring boot a été développé par l'équipe Pivotal (https://pivotal.io/).
 
 ------
 
+## <ins>Objectif des tutoriels</ins>
+
+### Thymeleaf :
+
+Ce tutoriel montre l'installation et l'utilisation de base des outils pour utiliser Spring Boot et Thymeleaf.
+
+1. Il explique comment installer Java et l'ide Spring tools 4.
+2. Il montre comment créer un nouveau projet et comment ajouter des bibliothèques (Dépendances).
+3. Finalement, on réalise pas à pas un programme simple utilisant la bibliothèque Thymeleaf qui permet à partir de notre programme Java d'afficher des données sur une page HTML5.
+
+### Api Rest : 
+
+L'objectif principal de ce tutoriel est de construire une application web suivant le modèle MVC Restful en utilisant les fonctionnalités de bases de SpringBoot. Les objectifs de ce tutoriel sont :
+
+1. Démarrer une application Spring de base en utilisant SpringBoot.
+2. Construire une application web suivant le modèle MVC.
+3. Utiliser les fonctionnalités Springboot afin de créer une application web Restful.
+4. Créer des interfaces logiques qui permettent l'injection de dépendances en utilisant les fonctionnalités de SpringBoot.
+5. Utiliser certaines annotations de SpringBoot pour effectuer des validations lors de requêtes à notre API.
+
+### JDBC avec PostgreSQL :
+
+Ce tutoriel vise à intégrer une base de données relationnelle à notre application web construite dans le tutoriel « API Rest ». Les objectifs sont entre autre de :
+
+1. Intégrer une base de données PostgreSQL au modèle d'application web MVC.
+2. Utiliser le logiciel Docker afin d'intégrer la base de données PostgreSQL.
+3. Faire l'insertion de données persistantes dans notre base de données.
+4. Effectuer des requêtes afin de recueillir l'information persistante en base de données.
+
 ## <ins>Tutoriel d'utilisation de Spring Boot :</ins>
 
 - <u><a href="/Thymeleaf/README.md">Thymeleaf</a></u>
 - <u><a href="/RestApi/README.md">Api Rest</a></u>
 - <u><a href="/JDBC/PostgreSQL/README.md">JDBC avec PostgreSQL (Suite Api Rest)</a></u>
-
-## <ins>Objectif des tutoriels</ins>
-
-### Thymeleaf:
-
-
-
-### Api Rest: 
-
-L'objectif principal de ce tutoriel est de construire une application web suivant le modèle MVC restful en utilisant les fonctionnalités de bases de SpringBoot. Les objectifs de ce tutoriel sont:
-
-1. Démarrer une application Spring de base en utilisant SpringBoot;
-2. Construire une application web suivant le modèle MVC;
-3. Utiliser les fonctionnalités Springboot afin de créer une application web Restful;
-4. Créer des interfaces logiques qui permettent l'injection de dépendances en utilisant les fonctionnalités de SpringBoot;
-5. Utiliser certaines annotations de SpringBoot pour effectuer des validations lors de requêtes à notre API.
-
-### JDBC avec PostgreSQL:
-
-Ce tutoriel vise à intégrer une base de données relationnelle à notre application web construite dans le tutoriel «API Rest». Les objectifs sont entre autre de:
-
-1. Intégrer une base de données PostgreSQL au modèle d'application web MVC;
-2. Utiliser le logiciel Docker afin d'intégrer la base de données PostgreSQL;
-3. Faire l'insertion de données persistantes dans notre base de données;
-4. Effectuer des requêtes afin de recueillir l'information persistante en base de données.
 
 ## <ins>**Références:**</ins>
 
