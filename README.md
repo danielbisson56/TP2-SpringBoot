@@ -109,8 +109,6 @@ Spring boot a été développé par l'équipe Pivotal (https://pivotal.io/).
 | <u><img src="./Image/SpringBootDependency/14.JPG" style = "float: top;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/15.JPG" style = "float: top;"  height="65%" width="65%"  ></u> | <u><img src="./Image/SpringBootDependency/15_5.JPG" style = "float: top;"  height="80%" width="80%"  ></u> | <u><img src="./Image/SpringBootDependency/17.JPG" style = "float: top;"  height="100%" width="100%"  ></u> |
 | <u><img src="./Image/SpringBootDependency/18.JPG" style = "float: top;"  height="100%" width="100%"  ></u> | <u><img src="./Image/SpringBootDependency/19.JPG" style = "float: top;"  height="80%" width="80%"  ></u> |                                                              |                                                              |
 
-------
-
 ## <ins>Objectif des tutoriels</ins>
 
 ### Thymeleaf :
