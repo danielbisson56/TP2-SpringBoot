@@ -247,7 +247,7 @@ Nous utiliserons Postman dans ce tutoriel afin de fournir un paquet JSON sur une
 - Entrer le chemin d'accès : localhost:8080/api/v1/person;
 - Dans la section Body, sélectionner raw puis au lieu de text, prenez JSON;
 - Dans l'onglet «Body» créez le paquet JSON avec l’attribut «name = '' James Bond ''».
-- <img src="images\image-20191117140603872.png" alt="image-20191117114342901" style="zoom:150%;" />
+<img src="images\image-20191117140603872.png" alt="image-20191117114342901" style="zoom:150%;" />
 
 <img src="images\image-20191117140644826.png" alt="image-20191117114342901" style="zoom:150%;" />
 
